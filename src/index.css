@@ -5,10 +5,15 @@
   --color-back : #FCE8E8;
   --color-primary : #333333;
   --color-secondary : #D12E2E;
+  --color-secondaryAccent : #FDEDED;
   
   --font-kanit: "Kanit", sans-serif;
 }
 
 *{
   font-family: var(--font-kanit);
+}
+
+::selection{
+  background: #fff;
 }
