@@ -5,17 +5,17 @@ function Navbar() {
   return (
     <nav className='flex justify-center items-center'>
         <ul className='flex gap-4 bg-secondaryAccent mt-2 px-2 py-0.5 rounded-md shadow-[0_0_4px_rgba(0,0,0,0.25)]'>
-            <li className={`text-[10px] cursor-pointer ${(selectedTab===0)? " text-secondary":"text-primary"} hover:scale-[1.03]`} 
+            <li className={`text-[10px] ease-in duration-100 cursor-pointer ${(selectedTab===0)? "text-secondary":"text-primary"} hover:scale-[1.03]`} 
             onClick={()=> setSelectedTab(0)}
             >
                 HOME
             </li>
-            <li className={`text-[10px] cursor-pointer ${(selectedTab===1)? " text-secondary":"text-primary"} hover:scale-[1.03]`} 
+            <li className={`text-[10px] ease-in duration-100 cursor-pointer ${(selectedTab===1)? "text-secondary":"text-primary"} hover:scale-[1.03]`} 
             onClick={()=> setSelectedTab(1)}
             >
                 PROJECTS
             </li>
-            <li className={`text-[10px] cursor-pointer ${(selectedTab===2)? " text-secondary":"text-primary"} hover:scale-[1.03]`} 
+            <li className={`text-[10px] ease-in duration-100 cursor-pointer ${(selectedTab===2)? "text-secondary":"text-primary"} hover:scale-[1.03]`} 
             onClick={()=> setSelectedTab(2)}
             >
                 ABOUT
