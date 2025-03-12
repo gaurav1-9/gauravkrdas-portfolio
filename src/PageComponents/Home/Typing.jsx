@@ -4,8 +4,8 @@ import { TypeAnimation } from 'react-type-animation';
 function Typing() {
   return (
     <div className='text-primary'>
-      <h2 className='text-xl font-light  leading-6'>A&nbsp;
-      <TypeAnimation className='font-semibold'
+      <h2 className='text-xl font-light  leading-6'>A
+      <TypeAnimation className='font-semibold ml-1'
       sequence={[
         'FULL STACK DEVELOPER',
         1000,
