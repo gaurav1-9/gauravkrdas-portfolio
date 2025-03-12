@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Navbar from "./PageComponents/Navbar";
+import Welcome from "./PageComponents/Home/Welcome";
 
 function Home() {
   useEffect(() => {
@@ -9,6 +10,7 @@ function Home() {
   return (
     <div className="bg-back w-full h-screen">
       <Navbar />
+      <Welcome />
     </div>
   );
 }
