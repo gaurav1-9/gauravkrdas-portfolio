@@ -17,13 +17,13 @@ function Welcome() {
                 <span className='text-primary text-2xl font-semibold'>LET'S TALK</span>
                 <div className='flex gap-2 text-primary text-xs'>
                     <a href="https://www.instagram.com/gaurav1_9/">
-                        <FaInstagram data-tooltip-id="insta" className='text-2xl cursor-pointer hover:text-secondary'/>
+                        <FaInstagram data-tooltip-id="insta" className='outline-none text-2xl cursor-pointer hover:text-secondary'/>
                     </a>
                     <a href="https://github.com/gaurav1-9">
-                        <FaGithub data-tooltip-id="github" className='text-2xl cursor-pointer hover:text-secondary'/>
+                        <FaGithub data-tooltip-id="github" className='outline-none text-2xl cursor-pointer hover:text-secondary'/>
                     </a>
                     <a href="https://www.linkedin.com/in/gaurav-kumar-das/">
-                        <FaLinkedinIn data-tooltip-id="linkedin" className='text-2xl cursor-pointer hover:text-secondary'/>
+                        <FaLinkedinIn data-tooltip-id="linkedin" className='outline-none text-2xl cursor-pointer hover:text-secondary'/>
                     </a>
                     <Tooltip
                         id="insta"
@@ -45,7 +45,7 @@ function Welcome() {
                     />
                 </div>
             </div>
-            <button className='rounded-lg px-4 py-2 text-back text-xl font-semibold cursor-pointer bg-primary hover:bg-primary/90 hover:scale-[1.02] ease-in duration-200'>DOWNLOAD MY RESUME</button>
+            <button className='rounded-lg px-4 py-2 text-back text-xl font-semibold cursor-pointer bg-primary hover:bg-primary/90 hover:scale-[1.02] ease-in duration-200 selection:text-primary'>DOWNLOAD MY RESUME</button>
         </div>
     </>
   )
