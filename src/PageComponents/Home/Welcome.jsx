@@ -17,16 +17,16 @@ function Welcome() {
             <div className='w-66 leading-2 flex justify-between items-center'>
                 <span className='text-primary text-2xl font-semibold'>LET'S TALK</span>
                 <div className='flex gap-2 text-primary text-xs'>
-                    <a href="https://www.instagram.com/gaurav1_9/">
+                    <a href="https://www.instagram.com/gaurav1_9/" target="_blank" rel="noopener noreferrer">
                         <FaInstagram data-tooltip-id="insta" className='outline-none text-2xl cursor-pointer hover:text-secondary'/>
                     </a>
-                    <a href="https://github.com/gaurav1-9">
+                    <a href="https://github.com/gaurav1-9" target="_blank" rel="noopener noreferrer">
                         <FaGithub data-tooltip-id="github" className='outline-none text-2xl cursor-pointer hover:text-secondary'/>
                     </a>
-                    <a href="https://www.linkedin.com/in/gaurav-kumar-das/">
+                    <a href="https://www.linkedin.com/in/gaurav-kumar-das/" target="_blank" rel="noopener noreferrer">
                         <FaLinkedinIn data-tooltip-id="linkedin" className='outline-none text-2xl cursor-pointer hover:text-secondary'/>
                     </a>
-                    <a href="https://www.instagram.com/argkd_/">
+                    <a href="https://www.instagram.com/argkd_/" target="_blank" rel="noopener noreferrer">
                         <BiLogoBlender data-tooltip-id="argkd" className='outline-none text-2xl cursor-pointer hover:text-secondary'/>
                     </a>
                     <Tooltip
