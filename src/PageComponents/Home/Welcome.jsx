@@ -7,7 +7,7 @@ import { Tooltip } from 'react-tooltip';
 function Welcome() {
   return (
     <>
-        <div className='mx-24 mt-18'>
+        <div className='mx-24 pt-18'>
             <p className='font-light text-primary mb-5 text-5xl'>Hello,</p>
             <p className='text-7xl font-extralight text-primary leading-16'>I'm <span className='text-secondary font-semibold'>GAURAV.</span></p>
             <Typing/>
