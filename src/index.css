@@ -12,6 +12,10 @@
 
 *{
   font-family: var(--font-kanit);
+  cursor: url(https://cdn.custom-cursor.com/db/4906/32/arrow2786.png), auto;
+}
+.pointer{
+  cursor: url(https://cdn.custom-cursor.com/db/4905/32/arrow2786.png), pointer;
 }
 
 ::selection{
@@ -33,9 +37,7 @@
   border-radius: 6px;
   border: 2px solid transparent;
   background-clip: content-box;
-  
 }
 ::-webkit-scrollbar-thumb:hover{
   background-color: var(--color-primary);
-
 }
