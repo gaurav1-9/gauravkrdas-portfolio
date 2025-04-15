@@ -1,5 +1,4 @@
 import React from 'react'
-import aboutPic from '../../assets/aboutPic.jpg'
 import LeftInfo from './LeftInfo'
 
 const About = () => {

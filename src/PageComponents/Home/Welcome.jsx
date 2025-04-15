@@ -1,8 +1,6 @@
 import React from 'react'
 import Typing from './Typing'
-import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { BiLogoBlender } from "react-icons/bi";
-import { Tooltip } from 'react-tooltip';
+import LinkIcons from '../LinkIcons';
 
 function Welcome() {
     return (
@@ -16,44 +14,7 @@ function Welcome() {
             <div className='mx-24 mt-24'>
                 <div className='w-66 leading-2 flex justify-between items-center'>
                     <span className='text-primary text-2xl font-semibold'>LET'S TALK</span>
-                    <div className='flex gap-2 text-primary text-xs'>
-                        <a href="https://www.instagram.com/gaurav1_9/" target="_blank" rel="noopener noreferrer">
-                            <FaInstagram data-tooltip-id="insta" className='outline-none text-2xl pointer hover:text-secondary' />
-                        </a>
-                        <a href="https://github.com/gaurav1-9" target="_blank" rel="noopener noreferrer">
-                            <FaGithub data-tooltip-id="github" className='outline-none text-2xl pointer hover:text-secondary' />
-                        </a>
-                        <a href="https://www.linkedin.com/in/gaurav-kumar-das/" target="_blank" rel="noopener noreferrer">
-                            <FaLinkedinIn data-tooltip-id="linkedin" className='outline-none text-2xl pointer hover:text-secondary' />
-                        </a>
-                        <a href="https://www.instagram.com/argkd_/" target="_blank" rel="noopener noreferrer">
-                            <BiLogoBlender data-tooltip-id="argkd" className='outline-none text-2xl pointer hover:text-secondary' />
-                        </a>
-                        <Tooltip
-                            id="insta"
-                            place="top"
-                            content="Instagram"
-                            className='!text-xl !rounded-lg'
-                        />
-                        <Tooltip
-                            id="github"
-                            place="top"
-                            content="Github"
-                            className='!text-xl !rounded-lg'
-                        />
-                        <Tooltip
-                            id="linkedin"
-                            place="top"
-                            content="LinkedIn"
-                            className='!text-xl !rounded-lg'
-                        />
-                        <Tooltip
-                            id="argkd"
-                            place="top"
-                            content="3D Renders"
-                            className='!text-xl !rounded-lg'
-                        />
-                    </div>
+                    <LinkIcons iconSize='text-2xl' toolTipLocation="top" idName='0'/>
                 </div>
                 <a href="/CV_of_Gaurav_Kumar_Das.pdf" download="Gaurav_CV.pdf">
                     <button className='rounded-lg px-6 py-2 text-back text-xl font-semibold pointer bg-primary hover:bg-primary/90 hover:scale-[1.02] ease-in duration-200 selection:text-primary'>DOWNLOAD MY RESUME</button>
