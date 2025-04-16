@@ -117,7 +117,7 @@ const TabSkills = () => {
       {
         skillList.map((item, index) => (
           <div key={index} className='flex mb-5 flex-col'>
-            <p className='text-primary font-semibold text-2xl'>{item.type}</p>
+            <p className='text-secondary font-semibold text-2xl'>{item.type}</p>
             <div className='flex flex-wrap gap-2.5 mt-3'>
               {
                 item.list.map((itemListIcon, idx) => (
