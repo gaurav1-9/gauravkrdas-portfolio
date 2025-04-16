@@ -32,7 +32,7 @@ const TabExperience = () => {
         exList.map((item, index) => (
           <div key={index} className='flex mb-5 flex-col'>
             <div className='flex justify-start'>
-              <img src={item.imgSrc} alt={item.imgAlt} className='w-20 h-20' />
+              <img src={item.imgSrc} alt={item.imgAlt} className={`${(item.imgAlt.startsWith('A'))?'w-18 h-18':'w-20 h-20'}`} draggable='false'/>
               <div className='ml-6'>
                 <p className='text-primary font-semibold text-2xl leading-3'>{item.role}</p>
                 <p className='text-primary font-light'>{item.comName} • {item.jobType}</p>
