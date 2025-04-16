@@ -109,6 +109,10 @@ const TabSkills = () => {
           class: "devicon-unity-plain",
           name: "Unity",
         },
+        {
+          class: "devicon-inkscape-plain",
+          name: "Inkscape",
+        },
       ],
     },
   ]
