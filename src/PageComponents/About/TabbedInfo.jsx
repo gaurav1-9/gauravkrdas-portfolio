@@ -32,7 +32,7 @@ const TabbedInfo = () => {
                     ))
                 }
             </div>
-            <div className='w-4/5 bg-primaryAccent p-4'>
+            <div className='w-4/5 p-4 overflow-y-scroll overflow-x-hidden'>
                 {
                     (tabNum===0)? <TabExperience/>
                     :(tabNum===1)? <TabSkills/>
