@@ -7,7 +7,6 @@ function Navbar({scrollToSection, refs}) {
         setSelectedTab(index);
         switch(index){
             case 0:
-                console.log(refs)
                 scrollToSection(refs.homePageRef)
                 break;
             case 1:
