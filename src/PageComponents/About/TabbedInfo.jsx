@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import TabExperience from './TabExperience';
 import TabSkills from './TabSkills';
 import TabEducation from './TabEducation';
@@ -6,9 +6,11 @@ import TabEducation from './TabEducation';
 const TabbedInfo = () => {
     const tabs = ['Experience', 'Skills', 'Education']
     const [tabNum, setTabNum] = useState(0)
+    const rightTabInfo = useRef(null);
 
     function handleTab(index) {
         setTabNum(index);
+        rightTabInfo.current?.scrollTo({top:0})
     }
     return (
         <div className=' w-3xl h-80 mt-6 flex'>
@@ -23,8 +25,8 @@ const TabbedInfo = () => {
                             <div className={`pointer w-2 ${(tabNum === index) ? "bg-secondary shadow-[2px_0_4px_rgba(0,0,0,0.25)]" : "bg-tabbedAccent"}`}></div>
                             <p className={`
                                 text-lg font-light uppercase pointer w-full flex justify-center items-center 
-                                ${(tabNum === index) ? "font-semibold text-secondary" 
-                                : "hover:scale-[1.03] ease-in duration-100 text-primary"}
+                                ${(tabNum === index) ? "font-semibold text-secondary"
+                                    : "hover:scale-[1.03] ease-in duration-100 text-primary"}
                             `}>
                                 {entry}
                             </p>
@@ -32,11 +34,11 @@ const TabbedInfo = () => {
                     ))
                 }
             </div>
-            <div className='w-4/5 p-4 overflow-y-scroll overflow-x-hidden'>
+            <div className='w-4/5 p-4 overflow-y-scroll overflow-x-hidden' ref={rightTabInfo}>
                 {
-                    (tabNum===0)? <TabExperience/>
-                    :(tabNum===1)? <TabSkills/>
-                    : <TabEducation/>
+                    (tabNum === 0) ? <TabExperience />
+                        : (tabNum === 1) ? <TabSkills />
+                            : <TabEducation />
                 }
             </div>
         </div>

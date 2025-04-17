@@ -3,7 +3,7 @@ import Home from './PageComponents/Home/Home'
 import Navbar from './PageComponents/Navbar'
 import Projects from './PageComponents/Projects/Projects'
 import About from './PageComponents/About/About'
-import Footer from './PageComponents/Footer/Footer'
+import Footer from './PageComponents/Footer'
 
 const App = () => {
     const homePageRef = useRef(null);
