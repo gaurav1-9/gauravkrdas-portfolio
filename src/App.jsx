@@ -15,11 +15,12 @@ const App = () => {
     }
     return (
         <div className='bg-back'>
-            <Navbar scrollToSection = {scrollToSection} refs = {{homePageRef, projectPageRef, aboutPageRef}}/>
-            <div ref={homePageRef}><Home /></div>
+            <div ref={homePageRef} className='w-0 h-0'></div>
+            <Navbar scrollToSection={scrollToSection} refs={{ homePageRef, projectPageRef, aboutPageRef }} />
+            <Home />
             <div ref={projectPageRef}><Projects /></div>
             <div ref={aboutPageRef}><About /></div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }
