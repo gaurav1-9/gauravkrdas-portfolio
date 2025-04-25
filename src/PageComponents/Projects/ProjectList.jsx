@@ -8,7 +8,7 @@ const ProjectList = ({ projList }) => {
             {projList.map((item, index) => (
                 <div key={index} className='w-2/7 bg-tabbedAccent h-65 rounded-2xl flex flex-col items-center py-4 relative'>
                     <div className='flex gap-2 items-center'>
-                        <p className='text-secondary font-semibold text-xl'>{item.name}</p>
+                        <p className='text-secondary text-center font-semibold text-xl'>{item.name}</p>
                         {
                             (item.hostLink!==null)?
                                 <a href={item.hostLink} target='_blank' className='text-secondary text-2xl bg-transparent'>

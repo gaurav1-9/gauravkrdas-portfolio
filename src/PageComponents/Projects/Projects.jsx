@@ -6,6 +6,30 @@ import ProjectList from './ProjectList'
 const Projects = () => {
     const projectList = [
         {
+            name: "READORA - Book Exchange Social Media",
+            techStack: [
+                {
+                    icon: "devicon-react-original",
+                    techName: "React"
+                },
+                {
+                    icon: "devicon-tailwindcss-original",
+                    techName: "TailwindCSS"
+                },
+                {
+                    icon: "devicon-nodejs-plain",
+                    techName: "NodeJs"
+                },
+                {
+                    icon: "devicon-mongodb-plain",
+                    techName: "MongoDBs"
+                },
+            ],
+            desc: "",
+            link: "https://github.com/gaurav1-9/readora-BookExchange-SocialMedia",
+            hostLink: null,
+        },
+        {
             name: "My Portfolio",
             techStack: [
                 {
