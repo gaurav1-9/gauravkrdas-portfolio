@@ -25,7 +25,7 @@ const Projects = () => {
                     techName: "MongoDBs"
                 },
             ],
-            desc: "",
+            desc: "A web based social network platform to exchange books.",
             link: "https://github.com/gaurav1-9/readora-BookExchange-SocialMedia",
             hostLink: null,
         },
