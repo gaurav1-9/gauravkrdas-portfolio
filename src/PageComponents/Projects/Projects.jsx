@@ -21,8 +21,12 @@ const Projects = () => {
                     techName: "NodeJs"
                 },
                 {
+                    icon: "devicon-express-original",
+                    techName: "Express"
+                },
+                {
                     icon: "devicon-mongodb-plain",
-                    techName: "MongoDBs"
+                    techName: "MongoDB"
                 },
             ],
             desc: "A web based social network platform to exchange books.",
