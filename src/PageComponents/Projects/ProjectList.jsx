@@ -28,7 +28,7 @@ const ProjectList = ({ projList }) => {
                             ))
                         }
                     </div>
-                    <a href={item.link} className='bottom-4 absolute'>
+                    <a href={item.link} target='_blank' className='bottom-4 absolute'>
                         <div className='flex items-center pointer'>
                             <FaGithub className='text-secondary pointer' />
                             <p className='pl-1 pointer font-light text-secondary'>Source code</p>
