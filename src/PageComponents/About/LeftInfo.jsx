@@ -10,7 +10,7 @@ const LeftInfo = () => {
                 <img
                     src={aboutPic}
                     alt="Profile"
-                    className="absolute left-32 bottom-25 w-full h-full object-cover scale-350"
+                    className="absolute left-2 w-full h-full object-cover scale-110"
                     draggable="false"
                 />
             </div>
