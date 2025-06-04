@@ -50,7 +50,7 @@ const App = () => {
             />
             <div ref={homePageRef}><Home /></div>
             <div ref={projectPageRef}><Projects /></div>
-            <div ref={aboutPageRef}><About /></div>
+            {/* <div ref={aboutPageRef}><About /></div> */}
             <Footer />
         </div>
     );

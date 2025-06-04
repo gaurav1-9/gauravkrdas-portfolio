@@ -5,7 +5,7 @@ import DashboardImg from "./DashboardImg";
 function Home() {
 
   return (
-    <div className="overflow-clip w-full h-screen relative">
+    <div className="overflow-clip w-full lg:h-screen relative">
       <Welcome />
       <DashboardImg />
     </div>
