@@ -30,11 +30,11 @@ const TabEducation = () => {
         eduList.map((item, index) => (
           <div key={index} className='flex mb-5 flex-col'>
             <div className='flex justify-start'>
-              <img src={item.imgSrc} alt={item.imgAlt} className={`w-20 ${(item.imgAlt.startsWith('D'))?'h-22':'h-20'}`} draggable='false'/>
+              <img src={item.imgSrc} alt={item.imgAlt} className={`w-17 md:w-20 lg:w-20 ${(item.imgAlt.startsWith('D'))?'h-19 md:h-22 lg:h-22':'h-17 md:h-20 lg:h-20'}`} draggable='false'/>
               <div className='ml-6'>
-                <p className='text-primary font-semibold text-2xl leading-6'>{item.name}</p>
-                <p className='text-primary text-md font-light'>{item.course}</p>
-                <p className='text-primaryAccent pt-1 font-light '>{item.duration}</p>
+                <p className='text-primary font-semibold text-xl md:text-2xl lg:text-2xl leading-6'>{item.name}</p>
+                <p className='text-primary text-xs md:text-sm lg:text-md font-light'>{item.course}</p>
+                <p className='text-primaryAccent text-sm md:text-base lg:text-base pt-1 font-light '>{item.duration}</p>
               </div>
             </div>
             {

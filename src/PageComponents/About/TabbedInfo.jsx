@@ -22,9 +22,9 @@ const TabbedInfo = () => {
                             className={`pointer md:h-1/3 lg:h-1/3 w-full ${(tabNum === index) ? "bg-back" : "bg-tabbedAccent"} flex flex-col md:flex-row lg:flex-row`}
                             onClick={() => handleTab(index)}
                         >
-                            <div className={`pointer h-2 md:h-full lg:h-full md:w-2 lg:w-2 ${(tabNum === index) ? "bg-secondary shadow-[2px_0_4px_rgba(0,0,0,0.25)]" : "bg-tabbedAccent"}`}></div>
+                            <div className={`pointer h-2 md:h-full lg:h-full md:w-2 lg:w-2 ${(tabNum === index) ? "bg-secondary shadow-[0_2px_4px_rgba(0,0,0,0.25)] md:shadow-[2px_0_4px_rgba(0,0,0,0.25)] lg:shadow-[2px_0_4px_rgba(0,0,0,0.25)]" : "bg-tabbedAccent"}`}></div>
                             <p className={`
-                                md:text-lg lg:text-lg font-light uppercase pointer w-full flex justify-center items-center pb-2 md:pb-0 lg:pb-0
+                                md:text-lg lg:text-lg font-light uppercase pointer w-full flex justify-center items-center pb-3 py-1 md:pt-0 lg:pt-0 md:pb-0 lg:pb-0
                                 ${(tabNum === index) ? "font-semibold text-secondary"
                                     : "hover:scale-[1.03] ease-in duration-100 text-primary"}
                             `}>

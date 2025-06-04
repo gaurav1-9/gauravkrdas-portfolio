@@ -32,13 +32,13 @@ const TabExperience = () => {
         exList.map((item, index) => (
           <div key={index} className='flex mb-5 flex-col'>
             <div className='flex justify-start'>
-              <img src={item.imgSrc} alt={item.imgAlt} className={`${(item.imgAlt.startsWith('A'))?'w-18 h-18':'w-20 h-20'}`} draggable='false'/>
+              <img src={item.imgSrc} alt={item.imgAlt} className={`${(item.imgAlt.startsWith('A'))?'w-15 h-15 lg:w-18 md:w-18 lg:h-18 md:h-18':'w-17 h-17 lg:w-20 md:w-20 lg:h-20 md:h-20'}`} draggable='false'/>
               <div className='ml-6'>
-                <p className='text-primary font-semibold text-2xl leading-3'>{item.role}</p>
-                <p className='text-primary font-light'>{item.comName} • {item.jobType}</p>
-                <p className='text-primaryAccent pt-1 font-light'>{item.duration}</p>
-                <p className='text-primaryAccent leading-3 font-light'>{item.place} • {item.jobMode}</p>
-                <p className='text-primary text-md pt-3 font-light'>{item.desc}</p>
+                <p className='text-primary font-semibold text-xl md:text-2xl lg:text-2xl leading-3'>{item.role}</p>
+                <p className='text-primary font-light md:text-sm lg:text-base mt-2 leading-4'>{item.comName} • {item.jobType}</p>
+                <p className='text-primaryAccent pt-1 font-light text-xs md:text-base lg:text-base'>{item.duration}</p>
+                <p className='text-primaryAccent leading-3 font-light text-xs md:text-base lg:text-base'>{item.place} • {item.jobMode}</p>
+                <p className='text-primary text-md pt-3 leading-4 text-sm md:text-base lg:text-base font-light'>{item.desc}</p>
               </div>
             </div>
             {
