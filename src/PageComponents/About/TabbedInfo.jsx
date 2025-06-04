@@ -13,18 +13,18 @@ const TabbedInfo = () => {
         rightTabInfo.current?.scrollTo({top:0})
     }
     return (
-        <div className=' w-3xl h-80 mt-6 flex'>
-            <div className='w-1/5'>
+        <div className='w-full lg:w-3xl h-80 mt-6 flex flex-col md:flex-row lg:flex-row md:scale-90 lg:scale-100'>
+            <div className='w-full md:w-1/5 lg:w-1/5 flex md:flex-col lg:flex-col'>
                 {
                     tabs.map((entry, index) => (
                         <div
                             key={index}
-                            className={`pointer h-1/3 w-full ${(tabNum === index) ? "bg-back" : "bg-tabbedAccent"} flex`}
+                            className={`pointer md:h-1/3 lg:h-1/3 w-full ${(tabNum === index) ? "bg-back" : "bg-tabbedAccent"} flex flex-col md:flex-row lg:flex-row`}
                             onClick={() => handleTab(index)}
                         >
-                            <div className={`pointer w-2 ${(tabNum === index) ? "bg-secondary shadow-[2px_0_4px_rgba(0,0,0,0.25)]" : "bg-tabbedAccent"}`}></div>
+                            <div className={`pointer h-2 md:h-full lg:h-full md:w-2 lg:w-2 ${(tabNum === index) ? "bg-secondary shadow-[2px_0_4px_rgba(0,0,0,0.25)]" : "bg-tabbedAccent"}`}></div>
                             <p className={`
-                                text-lg font-light uppercase pointer w-full flex justify-center items-center 
+                                md:text-lg lg:text-lg font-light uppercase pointer w-full flex justify-center items-center pb-2 md:pb-0 lg:pb-0
                                 ${(tabNum === index) ? "font-semibold text-secondary"
                                     : "hover:scale-[1.03] ease-in duration-100 text-primary"}
                             `}>
@@ -34,7 +34,7 @@ const TabbedInfo = () => {
                     ))
                 }
             </div>
-            <div className='w-4/5 p-4 overflow-y-scroll overflow-x-hidden' ref={rightTabInfo}>
+            <div className='w-full md:w-4/5 lg:w-4/5 p-4 overflow-y-scroll overflow-x-hidden text-left' ref={rightTabInfo}>
                 {
                     (tabNum === 0) ? <TabExperience />
                         : (tabNum === 1) ? <TabSkills />

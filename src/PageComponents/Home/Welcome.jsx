@@ -5,7 +5,7 @@ import LinkIcons from '../LinkIcons';
 function Welcome() {
     return (
         <>
-            <div className='mx-10 pt-10 lg:mx-24 lg:pt-18'>
+            <div className='mx-10 pt-10 md:mx-20 lg:mx-24 lg:pt-18'>
                 <p className='font-light text-primary mb-0 text-3xl lg:mb-5 lg:text-5xl'>Hello,</p>
                 <p className='text-5xl lg:text-7xl font-extralight text-primary lg:leading-16'>I'm <span className='text-secondary font-semibold'>GAURAV.</span></p>
                 <div className='h-24 lg:max-h-max'>
@@ -13,7 +13,7 @@ function Welcome() {
                     <p className='text-3xl lg:text-5xl font-light text-primary leading-7 lg:leading-12'>based in Assam</p>
                 </div>
             </div>
-            <div className='mx-10 mt-15 md:mt-20 lg:mt-24'>
+            <div className='mx-10 md:mx-20 lg:mx-24 mt-15 md:mt-20 lg:mt-24'>
                 <div className='w-66 md:w-63 lg:w-66 leading-2 flex justify-between items-center'>
                     <span className='text-primary text-xl lg:text-2xl font-semibold'>LET'S TALK</span>
                     <LinkIcons iconSize='text-xl lg:text-2xl' toolTipLocation="top" idName='0' />

@@ -4,7 +4,7 @@ import RightInfo from './RightInfo'
 
 const About = () => {
     return (
-        <div className="w-full h-screen flex">
+        <div className="w-full h-fit lg:h-screen flex flex-col lg:flex-row">
             <LeftInfo />
             <RightInfo />
         </div>
