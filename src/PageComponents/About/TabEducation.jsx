@@ -18,7 +18,7 @@ const TabEducation = () => {
     },
     {
       imgAlt: "DPSG Logo",
-      imgSrc: "https://dpsguwahati.org/img/logocolor.png",
+      imgSrc: "/DPSG_logocolor.png",
       name: "Delhi Public School - Guwahati",
       course: "School",
       duration: "2009 - 2020",
