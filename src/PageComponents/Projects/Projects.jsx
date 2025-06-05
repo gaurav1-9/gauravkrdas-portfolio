@@ -47,7 +47,7 @@ const Projects = () => {
             ],
             desc: "The page you are currently browsing is also one of my projects.",
             link: "https://github.com/gaurav1-9/gauravkrdas-portfolio",
-            hostLink: null,
+            hostLink: "https://gauravkrdas-portfolio.vercel.app/",
         },
         {
             name: "React Notes App",
