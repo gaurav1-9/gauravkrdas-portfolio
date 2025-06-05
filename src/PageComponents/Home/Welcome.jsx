@@ -4,7 +4,7 @@ import LinkIcons from '../LinkIcons';
 
 function Welcome() {
     return (
-        <div className='scale-100 m-0 2xl:scale-140 2xl:ml-85 2xl:pt-20'>
+        <>
             <div className='mx-10 pt-10 md:mx-20 lg:mx-24 lg:pt-18'>
                 <p className='font-light text-primary mb-0 text-3xl lg:mb-5 lg:text-5xl'>Hello,</p>
                 <p className='text-5xl lg:text-7xl font-extralight text-primary lg:leading-16'>I'm <span className='text-secondary font-semibold'>GAURAV.</span></p>
@@ -22,7 +22,7 @@ function Welcome() {
                     <button className='rounded-md max-w-max md:max-w-max lg:max-w-max lg:rounded-lg px-6 py-2 text-back text-xl font-semibold pointer bg-primary hover:bg-primary/90 hover:scale-[1.02] ease-in duration-200 selection:text-primary'>DOWNLOAD MY RESUME</button>
                 </a>
             </div>
-        </div>
+        </>
     )
 }
 

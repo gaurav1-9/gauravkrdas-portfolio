@@ -13,7 +13,7 @@ const TabbedInfo = () => {
         rightTabInfo.current?.scrollTo({top:0})
     }
     return (
-        <div className='w-full lg:w-3xl 2xl:w-4xl h-80 2xl:h-110 mt-6 flex flex-col md:flex-row lg:flex-row md:scale-90 lg:scale-100 2xl:scale-110 2xl:mt-20 2xl:ml-10'>
+        <div className='w-full lg:w-3xl h-80 mt-6 flex flex-col md:flex-row lg:flex-row md:scale-90 lg:scale-100'>
             <div className='w-full md:w-1/5 lg:w-1/5 flex md:flex-col lg:flex-col'>
                 {
                     tabs.map((entry, index) => (
