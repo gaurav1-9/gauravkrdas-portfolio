@@ -1,7 +1,7 @@
 # Portfolio of Gaurav Kumar Das
 Check it out here [live link](https://gauravkrdas-portfolio.vercel.app/)
 
-##
+## Portfolio Screenshots
 ![Home](./SS/home.png)
 <p float="left">
   <img src="./SS/projects.png" width="49%" />
