@@ -10,6 +10,8 @@
   --color-tabbedAccent : #E5D3D3;
   
   --font-kanit: "Kanit", sans-serif;
+
+  --breakpoint-2xl: 100rem;
 }
 
 *{
