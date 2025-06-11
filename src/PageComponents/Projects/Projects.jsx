@@ -6,6 +6,34 @@ import ProjectList from './ProjectList'
 const Projects = () => {
     const projectList = [
         {
+            name: "janim.ai",
+            techStack: [
+                {
+                    icon: "devicon-react-original",
+                    techName: "React"
+                },
+                {
+                    icon: "devicon-tailwindcss-original",
+                    techName: "TailwindCSS"
+                },
+                {
+                    icon: "devicon-nodejs-plain",
+                    techName: "NodeJs"
+                },
+                {
+                    icon: "devicon-express-original",
+                    techName: "Express"
+                },
+                {
+                    icon: "devicon-mongodb-plain",
+                    techName: "MongoDB"
+                },
+            ],
+            desc: "A web based user friendly AI driven quiz application.",
+            link: "https://github.com/gaurav1-9/janim.ai",
+            hostLink: null,
+        },
+        {
             name: "READORA - Book Exchange Social Media",
             techStack: [
                 {
