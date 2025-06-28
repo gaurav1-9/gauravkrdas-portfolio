@@ -3,6 +3,17 @@ import React from 'react'
 const TabExperience = () => {
   const exList = [
     {
+      imgAlt: "Unified Mentor Pvt Ltd Logo",
+      imgSrc: "https://media.licdn.com/dms/image/v2/D4D0BAQFqhNYYc-J88w/company-logo_200_200/company-logo_200_200/0/1694669130240?e=1756339200&v=beta&t=uXPvxFhqRvrGZcaxYsYymNTW7CqNd_Aoj_MQo96_eKk",
+      comName: "Unified Mentor Private Limited",
+      duration: "Jul 2025 - Sept 2025 • 3 mos",
+      role: 'Full Stack Web Developer Intern',
+      desc: '',
+      place: '',
+      jobMode: 'Remote',
+      jobType: "Internship",
+    },
+    {
       imgAlt: "APDCL Logo",
       imgSrc: "https://www.apdcl.org/website/img/apdcl_logo.b56b6858.png",
       comName: "Assam Power Distribution Company Limited",
