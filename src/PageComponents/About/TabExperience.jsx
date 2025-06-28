@@ -45,7 +45,7 @@ const TabExperience = () => {
             <div className='flex justify-start'>
               <img src={item.imgSrc} alt={item.imgAlt} className={`${(item.imgAlt.startsWith('A'))?'w-15 h-15 lg:w-18 md:w-18 lg:h-18 md:h-18':'w-17 h-17 lg:w-20 md:w-20 lg:h-20 md:h-20'}`} draggable='false'/>
               <div className='ml-6'>
-                <p className='text-primary font-semibold text-xl md:text-2xl lg:text-2xl leading-3'>{item.role}</p>
+                <p className='text-primary font-semibold text-xl md:text-2xl lg:text-2xl leading-5 lg:leading-3'>{item.role}</p>
                 <p className='text-primary font-light md:text-sm lg:text-base mt-2 leading-4'>{item.comName} • {item.jobType}</p>
                 <p className='text-primaryAccent pt-1 font-light text-xs md:text-base lg:text-base'>{item.duration}</p>
                 <p className='text-primaryAccent leading-3 font-light text-xs md:text-base lg:text-base'>{item.place} • {item.jobMode}</p>
