@@ -31,7 +31,7 @@ const Projects = () => {
             ],
             desc: "A web based user friendly AI driven quiz application.",
             link: "https://github.com/gaurav1-9/janim.ai",
-            hostLink: null,
+            hostLink: "https://janim-ai.vercel.app",
         },
         {
             name: "READORA - Book Exchange Social Media",
