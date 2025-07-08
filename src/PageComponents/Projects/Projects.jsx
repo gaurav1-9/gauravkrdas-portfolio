@@ -6,6 +6,22 @@ import ProjectList from './ProjectList'
 const Projects = () => {
     const projectList = [
         {
+            name: "flipperrr",
+            techStack: [
+                {
+                    icon: "devicon-react-original",
+                    techName: "React"
+                },
+                {
+                    icon: "devicon-tailwindcss-original",
+                    techName: "TailwindCSS"
+                },
+            ],
+            desc: "A web-based memory card game where players flip cards to find matching pairs.",
+            link: "https://github.com/gaurav1-9/flipperrr",
+            hostLink: null,
+        },
+        {
             name: "janim.ai",
             techStack: [
                 {
