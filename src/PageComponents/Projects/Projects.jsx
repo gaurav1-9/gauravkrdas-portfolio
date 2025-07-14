@@ -19,7 +19,7 @@ const Projects = () => {
             ],
             desc: "A web-based memory card game where players flip cards to find matching pairs.",
             link: "https://github.com/gaurav1-9/flipperrr",
-            hostLink: null,
+            hostLink: 'https://flipperrr.vercel.app/',
         },
         {
             name: "janim.ai",
