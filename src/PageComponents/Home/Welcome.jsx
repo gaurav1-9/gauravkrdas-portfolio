@@ -18,9 +18,14 @@ function Welcome() {
                     <span className='text-primary text-xl lg:text-2xl font-semibold'>LET'S TALK</span>
                     <LinkIcons iconSize='text-xl lg:text-2xl' toolTipLocation="top" idName='0' />
                 </div>
-                <a href="/CV_of_Gaurav_Kumar_Das.pdf" download="Gaurav_CV.pdf">
-                    <button className='rounded-md max-w-max md:max-w-max lg:max-w-max lg:rounded-lg px-6 py-2 text-back text-xl font-semibold pointer bg-primary hover:bg-primary/90 hover:scale-[1.02] ease-in duration-200 selection:text-primary'>DOWNLOAD MY RESUME</button>
-                </a>
+                {/* <a href="/CV_GauravKrDas.pdf" download="Gaurav_CV.pdf"> */}
+                    <button 
+                    className='rounded-md max-w-max md:max-w-max lg:max-w-max lg:rounded-lg px-6 py-2 text-back text-xl font-semibold pointer bg-primary hover:bg-primary/90 hover:scale-[1.02] ease-in duration-200 selection:text-primary'
+                    onClick={()=>window.open('/CV_GauravKrDas.pdf')}
+                    >
+                        DOWNLOAD MY RESUME
+                    </button>
+                {/* </a> */}
             </div>
         </div>
     )
