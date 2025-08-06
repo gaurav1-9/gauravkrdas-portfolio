@@ -6,6 +6,22 @@ import ProjectList from './ProjectList'
 const Projects = () => {
     const projectList = [
         {
+            name: "flipperrr",
+            techStack: [
+                {
+                    icon: "devicon-react-original",
+                    techName: "React"
+                },
+                {
+                    icon: "devicon-tailwindcss-original",
+                    techName: "TailwindCSS"
+                },
+            ],
+            desc: "A web-based memory card game where players flip cards to find matching pairs.",
+            link: "https://github.com/gaurav1-9/flipperrr",
+            hostLink: 'https://flipperrr.vercel.app/',
+        },
+        {
             name: "janim.ai",
             techStack: [
                 {
@@ -31,7 +47,7 @@ const Projects = () => {
             ],
             desc: "A web based user friendly AI driven quiz application.",
             link: "https://github.com/gaurav1-9/janim.ai",
-            hostLink: null,
+            hostLink: "https://janim-ai.vercel.app",
         },
         {
             name: "READORA - Book Exchange Social Media",
