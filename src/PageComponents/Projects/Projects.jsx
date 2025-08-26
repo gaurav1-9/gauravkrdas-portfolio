@@ -6,6 +6,22 @@ import ProjectList from './ProjectList'
 const Projects = () => {
     const projectList = [
         {
+            name: "PanPal",
+            techStack: [
+                {
+                    icon: "devicon-react-original",
+                    techName: "React"
+                },
+                {
+                    icon: "devicon-tailwindcss-original",
+                    techName: "TailwindCSS"
+                },
+            ],
+            desc: "A personalized online recipe book",
+            link: "https://github.com/gaurav1-9/panpal",
+            hostLink: 'https://panpal.vercel.app/',
+        },
+        {
             name: "flipperrr",
             techStack: [
                 {
