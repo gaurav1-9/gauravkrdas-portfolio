@@ -10,7 +10,8 @@ const Footer = () => {
             <div className='flex items-center gap-1 text-primaryAccent'>
                 <LiaCopyright className='text-xs lg:text-base' />
                 <p className='text-xs lg:text-base'>
-                    {year === 2025 ? year : `2025 - ${year}`}, built with</p>
+                    {year === 2025 ? year : `2025 - ${year}`}, built with
+                </p>
                 <FaHeart className='text-secondary text-xs lg:text-base' aria-label='love' />
                 <p className='text-xs lg:text-base'>by GAURAV KUMAR DAS</p>
             </div>
