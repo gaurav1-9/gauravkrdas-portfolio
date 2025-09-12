@@ -87,24 +87,19 @@
         ]
     },
     {
-        "type": "Source Control",
+        "type": "Tools & Platform",
         "list": [
             {
                 "class": "devicon-github-plain",
                 "name": "GitHub"
-            }
-        ]
-    },
-    {
-        "type": "Creative Development",
-        "list": [
+            },
+            {
+                "class": "devicon-postman-plain",
+                "name": "Postman"
+            },
             {
                 "class": "devicon-blender-original",
                 "name": "Blender 3D"
-            },
-            {
-                "class": "devicon-unity-plain",
-                "name": "Unity"
             },
             {
                 "class": "devicon-inkscape-plain",
