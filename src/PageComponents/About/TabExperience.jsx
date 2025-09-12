@@ -1,31 +1,7 @@
 import React from 'react'
+import exList from '../../data/experiences.json'
 
 const TabExperience = () => {
-  const exList = [
-    {
-      imgAlt: "APDCL Logo",
-      imgSrc: "https://www.apdcl.org/website/img/apdcl_logo.b56b6858.png",
-      comName: "Assam Power Distribution Company Limited",
-      duration: "Jul 2023 - Aug 2023 • 2 mos",
-      role: 'Intern',
-      desc: 'Built a Chatbot Service using HTML, CSS, JavaScript and Python',
-      place: 'Guwahati, Assam, India',
-      jobMode: 'Hybrid',
-      jobType: "Internship",
-    },
-    {
-      imgAlt: "TU Logo",
-      imgSrc: "https://www.tezu.ernet.in/images/tulogo.png",
-      comName: "Tezpur University",
-      duration: "Aug 2022 - Sep 2022 • 2 mos",
-      role: 'Intern',
-      desc: 'Speech Processing project using PRAAT and Python',
-      place: 'Tezpur, Assam, India',
-      jobMode: 'On-site',
-      jobType: "Internship",
-    },
-  ]
-
   return (
     <div>
       {
