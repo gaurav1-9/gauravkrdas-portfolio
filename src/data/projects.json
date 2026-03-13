@@ -1,5 +1,17 @@
 [
     {
+        "name": "Temporal and Topical Sorting of Multi-Text Information",
+        "techStack": [
+            {
+                "icon": "devicon-python-plain",
+                "techName": "Python"
+            }
+        ],
+        "desc": "My M.Tech final year project focuses on temporal and topical sorting of multi-document information.",
+        "link": "https://github.com/gaurav1-9/temporal-topical-sorting",
+        "hostLink": null
+    },
+    {
         "name": "flipperrr",
         "techStack": [
             {
