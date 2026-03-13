@@ -1,25 +1,5 @@
 [
     {
-        "name": "Sports Buddy",
-        "techStack": [
-            {
-                "icon": "devicon-react-original",
-                "techName": "React"
-            },
-            {
-                "icon": "devicon-tailwindcss-original",
-                "techName": "TailwindCSS"
-            },
-            {
-                "icon": "devicon-firebase-plain",
-                "techName": "Firebase"
-            }
-        ],
-        "desc": "A web platform that helps you connect with fellow sports enthusiasts and join sports events together.",
-        "link": "https://github.com/gaurav1-9/flipperrr",
-        "hostLink": null
-    },
-    {
         "name": "flipperrr",
         "techStack": [
             {
