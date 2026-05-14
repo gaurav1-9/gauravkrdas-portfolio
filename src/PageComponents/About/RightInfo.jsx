@@ -2,11 +2,23 @@ import React from 'react'
 import TabbedInfo from './TabbedInfo'
 
 const RightInfo = () => {
+    const getPreciseYears = (targetDate) => {
+        const now = new Date();
+        const then = new Date(targetDate);
+        let years = now.getFullYear() - then.getFullYear();
+
+        const monthDiff = now.getMonth() - then.getMonth();
+        if (monthDiff < 0 || (monthDiff === 0 && then.getDate() < now.getDate())) {
+            years--;
+        }
+        return years;
+    };
+
     return (
         <div className='lg:h-full w-full lg:w-2/3 pt-6 md:pt-0 lg:pt-26 px-6 md:px-20 lg:pl-12 text-center lg:text-justify'>
             <div className="lg:w-3xl 2xl:w-4xl 2xl:mt-5 min-[1536px]:mt-6">
                 <p className="font-light text-md lg:text-xl leading-4 lg:leading-6 text-primary">
-                    Hey there! I'm <span className="text-secondary font-semibold">Gaurav Kumar Das</span>, a 23-year-old passionate coder from Assam, India. I specialize in <span className="font-medium italic">Python</span>, <span className="font-medium italic">full-stack web development</span>, and <span className="font-medium italic">Android development</span>.
+                    Hey there! I'm <span className="text-secondary font-semibold">Gaurav Kumar Das</span>, a {getPreciseYears('2001-11-19')}-year-old passionate coder from Assam, India. I specialize in <span className="font-medium italic">Python</span>, <span className="font-medium italic">full-stack web development</span>, and <span className="font-medium italic">Android development</span>.
                     I love building meaningful, interactive projects and have hands-on experience with <span className="italic font-medium">REST APIs, building Chatbots</span> and solving <span className="italic font-medium">challenging coding problems</span> that push my skills.
                 </p>
                 <p className="font-light text-lg lg:text-xl leading-4 lg:leading-6 mt-2 text-primary">
