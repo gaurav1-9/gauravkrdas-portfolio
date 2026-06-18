@@ -2,7 +2,7 @@ import React from 'react'
 import { FaGithub } from "react-icons/fa";
 import { FaLink } from "react-icons/fa6";
 
-const ProjectList = ({ projList }) => {
+const ProjectList = ({ projList, setVisibleCount, visibleCount, totalProject }) => {
     return (
         <div className='flex flex-wrap px-10 pt-5 lg:pt-12 gap-2 md:gap-3 lg:gap-4 justify-center w-full'>
             {projList.map((item, index) => (
@@ -10,11 +10,11 @@ const ProjectList = ({ projList }) => {
                     <div className='flex gap-2 items-center'>
                         <p className='text-secondary text-center font-semibold text-xl leading-5 lg:leading-7 md:px-7'>{item.name}</p>
                         {
-                            (item.hostLink!==null)?
+                            (item.hostLink !== null) ?
                                 <a href={item.hostLink} target='_blank' className='text-secondary text-xl lg:text-2xl bg-transparent'>
-                                    <FaLink className='pointer'/>
+                                    <FaLink className='pointer' />
                                 </a>
-                            : null
+                                : null
                         }
                     </div>
                     <p className='text-primary font-light text-center pt-3 lg:px-6'>{item.desc}</p>
@@ -36,6 +36,25 @@ const ProjectList = ({ projList }) => {
                     </a>
                 </div>
             ))}
+
+            {
+                visibleCount &&
+                <div className='flex justify-center lg:justify-start items-center text-primaryAccent text-right font-semibold'>
+                    <button
+                        className='pointer'
+                        onClick={() => visibleCount >= totalProject
+                            ? setVisibleCount(5)
+                            : setVisibleCount(prev => prev + 3)
+                        }
+                    >
+                        
+                        {visibleCount >= totalProject
+                            ? 'view less'
+                            : 'view more'
+                        }
+                    </button>
+                </div>
+            }
         </div>
     )
 }

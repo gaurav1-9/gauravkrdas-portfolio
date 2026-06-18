@@ -10,19 +10,12 @@ const Projects = () => {
     return (
         <div className="w-full h-fit">
             <GithubChart />
-            <ProjectList projList={visibleProjects} />
-
-            {
-                visibleCount < projectList.length &&
-                <div className='text-primaryAccent text-right px-15 pt-2 lg:pt-0 font-semibold lg:relative'>
-                    <button
-                        className='lg:absolute -top-6 right-45 cursor-pointer'
-                        onClick={() => setVisibleCount(prev => prev + 3)}
-                    >
-                        view more
-                    </button>
-                </div>
-            }
+            <ProjectList
+                projList={visibleProjects}
+                setVisibleCount={setVisibleCount}
+                visibleCount={visibleCount}
+                totalProject={projectList.length}
+            />
         </div>
     )
 }
