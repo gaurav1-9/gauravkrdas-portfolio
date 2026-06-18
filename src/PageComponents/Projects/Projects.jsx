@@ -1,10 +1,17 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import GithubChart from './GithubChart'
 import ProjectList from './ProjectList'
 import projectList from '../../data/projects.json'
 
 const Projects = () => {
     const [visibleCount, setVisibleCount] = useState(5);
+    useEffect(() => {
+        if(window.innerWidth<768)
+            setVisibleCount(4)
+        else
+            setVisibleCount(5)
+    }, [])
+    
 
     const visibleProjects = projectList.slice(0, visibleCount);
     return (
