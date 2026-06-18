@@ -41,7 +41,7 @@ const ProjectList = ({ projList, setVisibleCount, visibleCount, totalProject }) 
                 visibleCount &&
                 <div className='flex justify-center lg:justify-start items-center text-primaryAccent text-right font-semibold'>
                     <button
-                        className='pointer'
+                        className='pointer hover:underline underline-offset-2'
                         onClick={() => visibleCount >= totalProject
                             ? setVisibleCount(5)
                             : setVisibleCount(prev => prev + 3)
