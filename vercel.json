@@ -1,0 +1,13 @@
+{
+  "outputDirectory": "deploy",
+  "rewrites": [
+    {
+      "source": "/ver_1/(.*)",
+      "destination": "/ver_1/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
