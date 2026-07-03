@@ -12,12 +12,13 @@ const TabEducation = () => {
               <div className='ml-6'>
                 <p className='text-primary font-semibold text-xl md:text-2xl lg:text-2xl leading-6'>{item.name}</p>
                 <p className='text-primary text-xs md:text-sm lg:text-md font-light'>{item.course}</p>
+                <p className='text-primary text-xs md:text-sm lg:text-md font-normal'>Grade: {item.grade}</p>
                 <p className='text-primaryAccent text-sm md:text-base lg:text-base pt-1 font-light '>{item.duration}</p>
               </div>
             </div>
             {
-              (index < eduList.length - 1) ?
-                <div className='w-full h-0.5 bg-tabbedAccent rounded-lg mb-3 mt-2'></div>
+              (index < eduList.length - 1)
+                ? <div className='w-full h-0.5 bg-tabbedAccent rounded-lg mb-3 mt-2'></div>
                 : null
             }
           </div>
