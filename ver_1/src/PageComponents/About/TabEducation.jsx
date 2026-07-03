@@ -12,7 +12,11 @@ const TabEducation = () => {
               <div className='ml-6'>
                 <p className='text-primary font-semibold text-xl md:text-2xl lg:text-2xl leading-6'>{item.name}</p>
                 <p className='text-primary text-xs md:text-sm lg:text-md font-light'>{item.course}</p>
-                <p className='text-primary text-xs md:text-sm lg:text-md font-normal'>Grade: {item.grade}</p>
+                {
+                  (item.grade)
+                    ? <p className='text-primary text-xs md:text-sm lg:text-md font-normal'>Grade: {item.grade}</p>
+                    : null
+                }
                 <p className='text-primaryAccent text-sm md:text-base lg:text-base pt-1 font-light '>{item.duration}</p>
               </div>
             </div>
