@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import GithubChart from './GithubChart'
 import ProjectList from './ProjectList'
-import projectList from '../../data/projects.json'
+import projectList from '../../../../shared/data/projects.json'
 
 const Projects = () => {
     const [visibleCount, setVisibleCount] = useState(5);

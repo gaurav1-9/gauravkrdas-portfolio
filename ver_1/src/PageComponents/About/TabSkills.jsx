@@ -1,5 +1,5 @@
 import React from 'react'
-import skillList from '../../data/skills.json'
+import skillList from '../../../../shared/data/skills.json'
 
 const TabSkills = () => {
   return (

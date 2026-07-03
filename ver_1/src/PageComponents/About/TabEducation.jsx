@@ -1,5 +1,5 @@
 import React from 'react'
-import eduList from '../../data/education.json'
+import eduList from '../../../../shared/data/education.json'
 
 const TabEducation = () => {
   return (

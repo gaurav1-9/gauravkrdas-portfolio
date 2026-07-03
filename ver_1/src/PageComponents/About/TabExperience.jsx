@@ -1,5 +1,5 @@
 import React from 'react'
-import exList from '../../data/experiences.json'
+import exList from '../../../../shared/data/experiences.json'
 
 const TabExperience = () => {
   return (

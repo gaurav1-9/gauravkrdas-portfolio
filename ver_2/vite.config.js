@@ -5,5 +5,10 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/ver_2/"
+  base: "/ver_2/",
+  server: {
+    fs: {
+      allow: [".."],
+    },
+  },
 })

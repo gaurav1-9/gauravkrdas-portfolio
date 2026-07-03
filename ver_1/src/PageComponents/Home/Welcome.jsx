@@ -1,6 +1,7 @@
 import React from 'react'
 import Typing from './Typing'
 import LinkIcons from '../LinkIcons';
+import cv from '../../../../shared/CV_GauravKrDas.pdf'
 
 function Welcome() {
     return (
@@ -21,7 +22,7 @@ function Welcome() {
                 {/* <a href="/CV_GauravKrDas.pdf" download="Gaurav_CV.pdf"> */}
                     <button 
                     className='rounded-md max-w-max md:max-w-max lg:max-w-max lg:rounded-lg px-6 py-2 text-back text-xl font-semibold pointer bg-primary hover:bg-primary/90 hover:scale-[1.02] ease-in duration-200 selection:text-primary'
-                    onClick={()=>window.open('/CV_GauravKrDas.pdf')}
+                    onClick={()=>window.open(cv)}
                     >
                         DOWNLOAD MY RESUME
                     </button>
