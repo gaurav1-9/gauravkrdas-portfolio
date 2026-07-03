@@ -15,9 +15,9 @@ fs.rmSync("deploy", { recursive: true, force: true });
 fs.mkdirSync("deploy");
 
 // Copy ver_2 to deploy root
-fs.cpSync("ver_2/dist", "deploy", { recursive: true });
+fs.cpSync("ver_2/dist", "deploy/ver_2", { recursive: true });
 
 // Copy ver_1 to deploy/ver_1
-fs.cpSync("ver_1/dist", "deploy/ver_1", { recursive: true });
+fs.cpSync("ver_1/dist", "deploy", { recursive: true });
 
 console.log("Done!");
