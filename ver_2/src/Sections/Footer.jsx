@@ -9,15 +9,15 @@ import sign from "../assets/footer_sign.png"
 const Footer = () => {
 
     return (
-        <div className='bg-carbonBlack px-5 lg:px-30 text-alabasterGrey selection:text-carbonBlack'>
-            <div className="flex flex-col lg:flex-row-reverse lg:justify-between">
+        <div className='bg-carbonBlack px-5 md:px-10 lg:px-30 text-alabasterGrey selection:text-carbonBlack'>
+            <div className="flex flex-col md:flex-row-reverse md:justify-between">
                 <img
                     src={sign}
                     draggable='false'
-                    className='w-30 lg:w-80 pt-10'
+                    className='w-30 md:w-80 pt-10'
                 />
 
-                <div className='mt-2 lg:mt-10 xl:mr-25 2xl:mr-130'>
+                <div className='mt-2 md:mt-10 xl:mr-25 2xl:mr-130'>
                     <p className='font-semibold text-xl'>Connect with me</p>
                     <div className='h-0.5 w-61 rounded-xl bg-alabasterGrey' />
                     <p className='flex gap-2 items-center pt-2 pb-1'>
@@ -53,11 +53,11 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='py-5 lg:pt-7 flex justify-center items-center gap-1 font-semibold'>
-                <LiaCopyright className='text-xs lg:text-base' />
-                <p className='text-xs lg:text-base'>2026, built with</p>
-                <FaHeart className='text-secondary text-xs lg:text-base' aria-label='love' />
-                <p className='text-xs lg:text-base'>by GAURAV KUMAR DAS</p>
+            <div className='py-5 md:pt-7 flex justify-center items-center gap-1 font-semibold'>
+                <LiaCopyright className='text-xs md:text-base' />
+                <p className='text-xs md:text-base'>2026, built with</p>
+                <FaHeart className='text-secondary text-xs md:text-base' aria-label='love' />
+                <p className='text-xs md:text-base'>by GAURAV KUMAR DAS</p>
             </div>
         </div>
     )
