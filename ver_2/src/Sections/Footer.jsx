@@ -4,6 +4,7 @@ import { IoIosMail } from "react-icons/io";
 import { FaHeart } from 'react-icons/fa';
 import { LiaCopyright } from "react-icons/lia";
 import version1 from "../../../shared/data/version_history.json"
+import sign from "../assets/footer_sign.png"
 
 const Footer = () => {
 
@@ -11,7 +12,7 @@ const Footer = () => {
         <div className='bg-carbonBlack px-5 lg:px-30 text-alabasterGrey selection:text-carbonBlack'>
             <div className="flex flex-col lg:flex-row-reverse lg:justify-between">
                 <img
-                    src="footer_sign.png"
+                    src={sign}
                     draggable='false'
                     className='w-30 lg:w-80 pt-10'
                 />
