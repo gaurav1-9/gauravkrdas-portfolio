@@ -20,24 +20,28 @@ const LinkIcons = ({iconSize, toolTipLocation, idName, iconColor='text-onyx', to
             </a>
             <Tooltip
                 id={`insta-${idName}`}
+                openOnClick={false}
                 place={toolTipLocation}
                 content="Instagram"
                 className={`text-xl! rounded-lg! ${toolTipColor}`}
-            />
+                />
             <Tooltip
                 id={`github-${idName}`}
+                openOnClick={false}
                 place={toolTipLocation}
                 content="Github"
                 className={`text-xl! rounded-lg! ${toolTipColor}`}
             />
             <Tooltip
                 id={`linkedin-${idName}`}
+                openOnClick={false}
                 place={toolTipLocation}
                 content="LinkedIn"
                 className={`text-xl! rounded-lg! ${toolTipColor}`}
             />
             <Tooltip
                 id={`argkd-${idName}`}
+                openOnClick={false}
                 place={toolTipLocation}
                 content="3D Renders"
                 className={`text-xl! rounded-lg! ${toolTipColor}`}
