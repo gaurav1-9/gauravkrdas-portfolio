@@ -57,7 +57,7 @@ export const App = () => {
   }
 
   return (
-    <div className='bg-alabasterGrey overflow-x-hidden'>
+    <div className='bg-alabasterGrey overflow-x-clip'>
       <div ref={homeTopPageRef} className='w-0 h-0'></div>
       
       <Navbar
