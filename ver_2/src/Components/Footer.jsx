@@ -15,6 +15,8 @@ const Footer = ({ handleClick }) => {
                     src={sign}
                     draggable='false'
                     className='aspect-auto w-30 md:w-80 size pt-10'
+                    loading='lazy'
+                    fetchPriority='low'
                 />
 
                 <div className='mt-2 md:mt-10 xl:mr-25 2xl:mr-130'>
