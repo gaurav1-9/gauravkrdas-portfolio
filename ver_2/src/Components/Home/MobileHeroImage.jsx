@@ -12,7 +12,6 @@ const MobileHeroImage = ({ image }) => {
                     src={image}
                     className='scale-100 mr-5 z-10 absolute -top-10 left-17'
                     fetchPriority='high'
-                    loading='eager'
                     draggable='false'
                 />
             </div>
