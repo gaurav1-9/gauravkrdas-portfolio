@@ -40,16 +40,16 @@ const Footer = ({ handleClick }) => {
                         <p className='font-semibold text-lg lg:text-2xl'>Site Map</p>
                         <div className='h-0.5 w-22 md:w-28 rounded-xl bg-alabasterGrey' />
                         <ul className="flex flex-col p-2 text-lg lg:text-2xl ">
-                            <li onClick={() => handleClick(0)} className='cursor-pointer list-none'>Home</li>
-                            <li onClick={() => handleClick(1)} className='cursor-pointer list-none'>Projects</li>
-                            <li onClick={() => handleClick(2)} className='cursor-pointer list-none'>About</li>
+                            <li onClick={() => handleClick(0)} className='cursor-pointer list-none hover:text-alabasterGrey/80'>Home</li>
+                            <li onClick={() => handleClick(1)} className='cursor-pointer list-none hover:text-alabasterGrey/80'>Projects</li>
+                            <li onClick={() => handleClick(2)} className='cursor-pointer list-none hover:text-alabasterGrey/80'>About</li>
                         </ul>
                     </div>
                     <div className='ml-15 xl:ml-20'>
                         <p className='font-semibold text-lg lg:text-2xl'>Version</p>
                         <div className='h-0.5 w-19.5 md:w-25 rounded-xl bg-alabasterGrey text-lg lg:text-2xl' />
                         <a href={version1.v_1}>
-                            <p className='p-2'>1.0</p>
+                            <p className='p-2 text-lg lg:text-2xl hover:text-alabasterGrey/80'>1.0</p>
                         </a>
                     </div>
                 </div>
