@@ -1,10 +1,10 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
 
-const Typing = () => {
+const Typing = ({ textSize, margin }) => {
     return (
-        <div className='mt-12'>
-            <h2 className='text-xl flex gap-1'>
+        <div className={`${margin}`}>
+            <h2 className={`${textSize} flex gap-1`}>
                 <span>//</span>
                 <TypeAnimation
                     sequence={[

@@ -14,12 +14,12 @@ const Footer = ({ handleClick }) => {
                 <img
                     src={sign}
                     draggable='false'
-                    className='aspect-auto w-30 md:w-80 size pt-10'
+                    className='aspect-auto w-30 md:w-85 md:scale-75 size pt-10'
                     loading='lazy'
                     fetchPriority='low'
                 />
 
-                <div className='mt-2 md:mt-10 xl:mr-25 2xl:mr-130'>
+                <div className='mt-2 md:mt-10 2xl:mr-130'>
                     <p className='font-semibold text-lg lg:text-2xl'>Connect with me</p>
                     <div className='h-0.5 w-61 rounded-xl bg-alabasterGrey' />
                     <p className='flex gap-2 items-center pt-2 pb-1 text-lg lg:text-2xl'>
@@ -45,7 +45,7 @@ const Footer = ({ handleClick }) => {
                             <li onClick={() => handleClick(2)} className='cursor-pointer list-none'>About</li>
                         </ui>
                     </div>
-                    <div className='ml-15 xl:ml-25'>
+                    <div className='ml-15 xl:ml-20'>
                         <p className='font-semibold text-lg lg:text-2xl'>Version</p>
                         <div className='h-0.5 w-19.5 md:w-25 rounded-xl bg-alabasterGrey text-lg lg:text-2xl' />
                         <a href={version1.v_1}>

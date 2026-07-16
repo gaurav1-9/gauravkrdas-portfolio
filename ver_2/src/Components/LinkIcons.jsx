@@ -3,9 +3,9 @@ import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { BiLogoBlender } from "react-icons/bi";
 import { Tooltip } from 'react-tooltip';
 
-const LinkIcons = ({iconSize, toolTipLocation, idName, iconColor='text-onyx', toolTipColor}) => {
+const LinkIcons = ({iconSize, toolTipLocation, idName, iconColor='text-onyx', toolTipColor, gap='gap-3'}) => {
     return (
-        <div className={`flex gap-3 text-primary text-xs ${iconColor}`}>
+        <div className={`flex ${gap} text-primary text-xs ${iconColor}`}>
             <a href="https://www.instagram.com/gaurav1_9/" target="_blank" rel="noopener noreferrer">
                 <FaInstagram data-tooltip-id={`insta-${idName}`} className={`outline-none ${iconSize} pointer hover:text-secondary`} />
             </a>

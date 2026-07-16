@@ -67,12 +67,12 @@ export const App = () => {
       />
 
       <div ref={homePageRef}><Home /></div>
-      <div ref={projectPageRef}><Project /></div>
+      {/* <div ref={projectPageRef}><Project /></div>
       <div ref={aboutPageRef}><About /></div>
 
       <Footer
         handleClick={handleClick}
-      />
+      /> */}
     </div>
   )
 }

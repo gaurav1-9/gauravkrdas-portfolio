@@ -2,7 +2,7 @@ import React from 'react'
 
 const Project = () => {
     return (
-        <div className=' my-6 px-5'>
+        <div className=' my-6 px-5 h-screen'>
             <img
                 src="https://ghchart.rshah.org/171717/gaurav1-9"
             />

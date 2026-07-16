@@ -1,41 +1,47 @@
 import React from 'react'
 import landingImage from '../assets/Profile_HTimage.png'
 import mobileRect from '../assets/mobile_rect.png'
+import desktopRect from '../assets/desktop_rect.png'
 import MobileHeroImage from './Home/MobileHeroImage'
 import Typing from './Home/Typing';
 import cv from '../../../shared/CV_GauravKrDas.pdf'
 import LinkIcons from './LinkIcons';
+import Name from './Home/Name'
 
 const Home = () => {
     return (
         <div className='px-5 md:px-10 lg:px-30 mt-8'>
             <MobileHeroImage image={landingImage} />
 
-            <div className="relative flex flex-col justify-center items-center mt-8 text-carbonBlack">
+            <div className="hidden md:flex absolute -top-10 md:-right-40 msi:-right-50 h-screen">
                 <img
-                    src={mobileRect}
-                    className='absolute top-8.5 scale-130'
-                    fetchPriority='high'
-                    loading='eager'
-                    draggable='false'
+                    src={landingImage}
+                    className='z-100 scale-110'
                 />
-                <p className='font-extrabold text-[69px] z-2 leading-8'>GAURAV</p>
-                <p className='text-3xl tracking-[13px] pl-2 leading-14 z-2'>KUMAR DAS</p>
             </div>
 
-            <Typing />
+            <Name
+                mobileRect={mobileRect}
+                desktopRect={desktopRect}
+            />
+
+            <Typing
+                textSize={'text-xl md:text-4xl'}
+                margin={'mt-12 md:-mt-10 msi:-mt-6'}
+            />
 
             <button
-                className='bg-carbonBlack text-alabasterGrey w-full py-3 rounded-lg mt-2 mb-4 font-semibold lowercase text-lg'
+                className='bg-carbonBlack text-alabasterGrey w-full md:w-150 py-3 rounded-lg mt-2 mb-4 font-semibold lowercase text-lg md:text-2xl cursor-pointer hover:bg-carbonBlack/92'
                 onClick={() => window.open(cv)}
             >
                 DOWNLOAD MY RESUME
             </button>
 
             <LinkIcons
-            idName={1}
-            toolTipLocation={'bottom'}
-            iconSize={'text-3xl'}
+                idName={1}
+                toolTipLocation={'bottom'}
+                iconSize={'text-3xl msi:text-4xl'}
+                gap='md:gap-4 msi:gap-5'
             />
         </div>
     )
