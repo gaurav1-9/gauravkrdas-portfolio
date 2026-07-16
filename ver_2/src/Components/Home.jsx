@@ -41,7 +41,7 @@ const Home = () => {
                 idName={1}
                 toolTipLocation={'bottom'}
                 iconSize={'text-3xl msi:text-4xl'}
-                gap='md:gap-4 msi:gap-5'
+                gap='gap-3 md:gap-4 msi:gap-5'
             />
         </div>
     )
