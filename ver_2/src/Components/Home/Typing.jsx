@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 const Typing = ({ textSize, margin }) => {
     return (
         <div className={`${margin}`}>
-            <h2 className={`${textSize} flex gap-1`}>
+            <h2 className={`${textSize} flex gap-1 cursor-default`}>
                 <span>//</span>
                 <TypeAnimation
                     sequence={[
