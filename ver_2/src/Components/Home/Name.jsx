@@ -2,7 +2,7 @@ import React from 'react'
 
 const Name = ({mobileRect, desktopRect}) => {
     return (
-        <div className="relative flex flex-col justify-center items-center md:items-start mt-8 md:mt-35 msi:mt-40 text-carbonBlack">
+        <div className="relative flex flex-col justify-center items-center md:items-start mt-8 md:mt-35 msi:mt-40 2xl:mt-50 text-carbonBlack">
             <img
                 src={mobileRect}
                 className='absolute top-8.5 scale-130 md:hidden'
@@ -17,8 +17,8 @@ const Name = ({mobileRect, desktopRect}) => {
                 loading='eager'
                 draggable='false'
             />
-            <p className='font-extrabold text-[69px] md:text-[205px] msi:text-[230px] z-2 leading-8 md:leading-0 msi:leading-8 md:tracking-[17px] msi:tracking-[25px]'>GAURAV</p>
-            <p className='text-3xl md:text-[70px] msi:text-[85px] tracking-[13px] md:tracking-[45px] msi:tracking-[50px] pl-2 z-2 leading-14 md:leading-60'>KUMAR DAS</p>
+            <p className='font-extrabold text-[69px] md:text-[205px] msi:text-[230px] 2xl:text-[280px] z-2 leading-8 md:leading-0 msi:leading-8 md:tracking-[17px] msi:tracking-[25px]'>GAURAV</p>
+            <p className='text-3xl md:text-[70px] msi:text-[85px] 2xl:text-[100px] tracking-[13px] md:tracking-[45px] msi:tracking-[50px] 2xl:tracking-[60px] pl-2 z-2 leading-14 md:leading-60 2xl:leading-75'>KUMAR DAS</p>
         </div>
     )
 }

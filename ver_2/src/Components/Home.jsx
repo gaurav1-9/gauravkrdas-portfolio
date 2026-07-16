@@ -7,16 +7,24 @@ import Typing from './Home/Typing';
 import cv from '../../../shared/CV_GauravKrDas.pdf'
 import LinkIcons from './LinkIcons';
 import Name from './Home/Name'
+import Location from './Home/Location'
 
 const Home = () => {
     return (
         <div className='px-5 md:px-10 lg:px-30 mt-8'>
+
             <MobileHeroImage image={landingImage} />
 
-            <div className="hidden md:flex absolute -top-10 md:-right-40 msi:-right-50 h-screen">
+            <div className='hidden md:flex absolute left-0 w-full h-full top-0 overflow-clip pointer-events-none'>
+                <div className="absolute top-6 md:left-10 lg:left-30">
+                    <Location
+                        textColor={'text-carbonBlack'}
+                        fontSize='md:text-xl msi:text-2xl'
+                    />
+                </div>
                 <img
                     src={landingImage}
-                    className='z-100 scale-110'
+                    className='z-100 scale-110 2xl:scale-120 absolute -top-6 2xl:-top-10 md:-right-40 msi:-right-50 h-screen'
                 />
             </div>
 
@@ -27,7 +35,7 @@ const Home = () => {
 
             <Typing
                 textSize={'text-xl md:text-4xl'}
-                margin={'mt-12 md:-mt-10 msi:-mt-6'}
+                margin={'mt-12 md:-mt-10 msi:-mt-6 2xl:mt-0'}
             />
 
             <button

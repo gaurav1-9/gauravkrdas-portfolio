@@ -39,11 +39,11 @@ const Footer = ({ handleClick }) => {
                     <div>
                         <p className='font-semibold text-lg lg:text-2xl'>Site Map</p>
                         <div className='h-0.5 w-22 md:w-28 rounded-xl bg-alabasterGrey' />
-                        <ui className="flex flex-col p-2 text-lg lg:text-2xl ">
+                        <ul className="flex flex-col p-2 text-lg lg:text-2xl ">
                             <li onClick={() => handleClick(0)} className='cursor-pointer list-none'>Home</li>
                             <li onClick={() => handleClick(1)} className='cursor-pointer list-none'>Projects</li>
                             <li onClick={() => handleClick(2)} className='cursor-pointer list-none'>About</li>
-                        </ui>
+                        </ul>
                     </div>
                     <div className='ml-15 xl:ml-20'>
                         <p className='font-semibold text-lg lg:text-2xl'>Version</p>
