@@ -17,6 +17,7 @@ const GitChart = () => {
                 openOnClick={false}
                 place='bottom'
                 content="Github Contribution Chart"
+                delayShow={800}
                 className={`text-xl! rounded-md! z-10! hidden! lg:flex!`}
             />
         </div>
