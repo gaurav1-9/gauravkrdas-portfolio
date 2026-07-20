@@ -15,7 +15,7 @@ const Project = () => {
     }, [])
 
     return (
-        <div className='flex flex-col justify-start items-center -mt-11 md:mt-0 xl:mt-19 msi:mt-25 2xl:mt-48 pt-25 px-5 h-screen'>
+        <div className='flex flex-col justify-start items-center -mt-11 md:mt-0 xl:mt-19 msi:mt-25 2xl:mt-48 pt-25 px-5 h-fit'>
             <GitChart />
             <ProjectList
                 projList={visibleProjects}

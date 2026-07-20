@@ -1,5 +1,7 @@
 import React from 'react'
-import { FaGithub, FaLink } from 'react-icons/fa6'
+import { FaGithub } from 'react-icons/fa6'
+import { TbWorld } from "react-icons/tb";
+import { Tooltip } from 'react-tooltip';
 
 const ProjectList = ({ projList, setVisibleCount, visibleCount, totalProject }) => {
     return (
@@ -8,41 +10,55 @@ const ProjectList = ({ projList, setVisibleCount, visibleCount, totalProject }) 
                 projList.map((item, index) => (
                     <div
                         key={index}
-                        className='w-full md:w-3/7 lg:w-2/7 h-fit md:h-70 lg:h-65 rounded-2xl flex flex-col items-center py-4 px-4 md:px-5 lg:px-0 relative bg-crimsonCarrot'
+                        className='w-full md:w-3/7 lg:w-2/7 md:h-70 lg:h-93 msi:h-85 rounded-3xl flex flex-col items-center p-2 relative bg-crimsonCarrot'
                     >
-                        <div className='flex gap-2 items-center'>
+                        <div className="rounded-[22px] shadow-2xl shadow-alabasterGrey/60 min-h-fit max-h-9/10 md:h-9/10 p-4 flex flex-col items-center justify-between bg-alabasterGrey">
                             <p className='text-center font-semibold text-xl leading-6 lg:leading-7 md:px-7'>{item.name}</p>
+                            <p className='text-primary font-regular text-center pt-3 lg:px-6'>{item.desc}</p>
+                            <div className='flex flex-wrap gap-2 justify-center pt-2 lg:pb-0'>
+                                {
+                                    item.techStack.map((techItem, idx) => (
+                                        <div key={idx} className='flex w-fit rounded-xl justify-between px-2 lg:px-3 items-center py-1 border-3 border-crimsonCarrot'>
+                                            <i className={`${techItem.icon} pr-2 text-xs lg:text-sm`}></i>
+                                            <p className='uppercase font-light text-xs lg:text-sm'>{techItem.techName}</p>
+                                        </div>
+                                    ))
+                                }
+                            </div>
+                        </div>
+                        <div className="w-full flex flex-row-reverse justify-between items-center px-10 py-2 md:h-2/10 xl:h-1/10 msi:h-2/10">
+                            <a href={item.link} target='_blank' className=' hover:underline underline-offset-2 text-carbonBlack hover:text-carbonBlack/80' >
+                                <div className='flex items-center cursor-pointer'>
+                                    <FaGithub />
+                                    <p className='pl-1'>Source code</p>
+                                </div>
+                            </a>
                             {
                                 (item.hostLink !== null) ?
-                                    <a href={item.hostLink} target='_blank' className='text-xl lg:text-2xl bg-transparent'>
-                                        <FaLink className='pointer' />
+                                    <a
+                                        href={item.hostLink}
+                                        target='_blank'
+                                        className='text-xl lg:text-2xl bg-transparent'
+                                        data-tooltip-id={`live-${index}`}
+                                    >
+                                        <TbWorld className='hover:text-carbonBlack/70' />
+                                        <Tooltip
+                                            id={`live-${index}`}
+                                            openOnClick={false}
+                                            place={'right'}
+                                            content="Live demo"
+                                            className={`text-xl! rounded-lg! z-10! hidden! lg:flex!`}
+                                        />
                                     </a>
                                     : null
                             }
                         </div>
-                        <p className='text-primary font-regular text-center pt-3 lg:px-6'>{item.desc}</p>
-                        <div className='flex flex-wrap gap-2 justify-center pt-2 pb-10 md:pb-10 lg:pb-0'>
-                            {
-                                item.techStack.map((techItem, idx) => (
-                                    <div key={idx} className='flex w-fit rounded-xl justify-between px-2 lg:px-3 items-center py-1'>
-                                        <i className={`${techItem.icon} pr-2 text-xs lg:text-sm`}></i>
-                                        <p className='uppercase font-light text-xs lg:text-sm'>{techItem.techName}</p>
-                                    </div>
-                                ))
-                            }
-                        </div>
-                        <a href={item.link} target='_blank' className='bottom-4 absolute'>
-                            <div className='flex items-center pointer'>
-                                <FaGithub className='pointer' />
-                                <p className='pl-1 pointer font-light'>Source code</p>
-                            </div>
-                        </a>
                     </div>
                 ))
             }
             {
                 visibleCount &&
-                <div className='flex justify-center lg:justify-start items-center text-carbonBlack text-right font-semibold'>
+                <div className='flex justify-center lg:justify-start items-center text-carbonBlack text-right font-semibold md:mr-10'>
                     <button
                         className='cursor-pointer hover:underline underline-offset-2'
                         onClick={() => visibleCount >= totalProject
