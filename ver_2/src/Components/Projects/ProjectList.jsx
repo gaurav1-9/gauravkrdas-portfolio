@@ -4,6 +4,7 @@ import { TbWorld } from "react-icons/tb";
 import { Tooltip } from 'react-tooltip';
 
 const ProjectList = ({ projList, setVisibleCount, visibleCount, totalProject }) => {
+    const initialCount = visibleCount;
     return (
         <div className='flex flex-wrap lg:px-10 pt-5 lg:pt-12 gap-2 md:gap-3 lg:gap-4 justify-center w-full cursor-default text-carbonBlack'>
             {
@@ -61,9 +62,14 @@ const ProjectList = ({ projList, setVisibleCount, visibleCount, totalProject }) 
                 <div className='flex justify-center lg:justify-start items-center text-carbonBlack text-right font-semibold md:mr-10'>
                     <button
                         className='cursor-pointer hover:underline underline-offset-2'
-                        onClick={() => visibleCount >= totalProject
-                            ? setVisibleCount(5)
-                            : setVisibleCount(prev => prev + 3)
+                        onClick={
+                            () => {
+                                visibleCount >= totalProject
+                                    ? window.innerWidth < 768
+                                        ? setVisibleCount(4)
+                                        : setVisibleCount(5)
+                                    : setVisibleCount(prev => prev + 3)
+                            }
                         }
                     >
 
