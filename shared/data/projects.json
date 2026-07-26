@@ -12,6 +12,25 @@
         "hostLink": null
     },
     {
+        "name": "PanPal",
+        "techStack": [
+            {
+                "icon": "devicon-react-original",
+                "techName": "React"
+            },
+            {
+                "icon": "devicon-tailwindcss-original",
+                "techName": "TailwindCSS"
+            },
+            {
+                "techName": "LocalStorage"
+            }
+        ],
+        "desc": "A web application for creating, organizing, and managing a personalized collection of recipes.",
+        "link": "https://github.com/gaurav1-9/panpal",
+        "hostLink": "https://panpal.vercel.app/"
+    },
+    {
         "name": "flipperrr",
         "techStack": [
             {

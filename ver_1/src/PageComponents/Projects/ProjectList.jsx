@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaGithub } from "react-icons/fa";
 import { FaLink } from "react-icons/fa6";
+import { MdOutlineStorage } from "react-icons/md";
 
 const ProjectList = ({ projList, setVisibleCount, visibleCount, totalProject }) => {
     return (
@@ -22,7 +23,11 @@ const ProjectList = ({ projList, setVisibleCount, visibleCount, totalProject }) 
                         {
                             item.techStack.map((techItem, idx) => (
                                 <div key={idx} className='flex w-fit bg-secondary rounded-xl justify-between px-2 lg:px-3 items-center py-1'>
-                                    <i className={`${techItem.icon} pr-2 text-xs lg:text-sm`}></i>
+                                    {
+                                        techItem.icon != null
+                                            ? <i className={`${techItem.icon} pr-2 text-xs lg:text-sm`}></i>
+                                            : <MdOutlineStorage className=' pr-2 text-xs lg:text-sm'/>
+                                    }
                                     <p className='uppercase font-light text-xs lg:text-sm'>{techItem.techName}</p>
                                 </div>
                             ))
@@ -47,7 +52,7 @@ const ProjectList = ({ projList, setVisibleCount, visibleCount, totalProject }) 
                             : setVisibleCount(prev => prev + 3)
                         }
                     >
-                        
+
                         {visibleCount >= totalProject
                             ? 'view less'
                             : 'view more'
