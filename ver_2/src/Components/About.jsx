@@ -6,7 +6,7 @@ import Right from './About/Right'
 
 const About = () => {
     return (
-        <div className='flex flex-col lg:flex-row pt-20 md:pt-30 lg:pt-10 xl:pt-5 msi:pt-15 px-5 lg:px-30 h-screen'>
+        <div className='flex flex-col lg:flex-row pt-17 md:pt-30 lg:pt-10 xl:pt-5 msi:pt-15 px-5 lg:px-30 h-screen'>
             <div className='flex flex-col md:flex-row lg:flex-col lg:justify-center lg:items-center'>
                 <Image />
                 <Sign />
