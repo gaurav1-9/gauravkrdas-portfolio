@@ -1,4 +1,5 @@
 import React from 'react'
+import { DiDatabase } from 'react-icons/di';
 import { FaGithub } from 'react-icons/fa6'
 import { TbWorld } from "react-icons/tb";
 import { Tooltip } from 'react-tooltip';
@@ -20,7 +21,11 @@ const ProjectList = ({ projList, setVisibleCount, visibleCount, totalProject }) 
                                 {
                                     item.techStack.map((techItem, idx) => (
                                         <div key={idx} className='flex w-fit rounded-xl justify-between px-2 lg:px-3 items-center py-1 border-3 border-crimsonCarrot'>
-                                            <i className={`${techItem.icon} pr-2 text-xs lg:text-sm`}></i>
+                                            {
+                                                techItem.icon != null
+                                                    ? <i className={`${techItem.icon} pr-2 text-xs lg:text-sm`}></i>
+                                                    : <DiDatabase className='mr-2 text-sm lg:text-base' />
+                                            }
                                             <p className='uppercase font-light text-xs lg:text-sm'>{techItem.techName}</p>
                                         </div>
                                     ))

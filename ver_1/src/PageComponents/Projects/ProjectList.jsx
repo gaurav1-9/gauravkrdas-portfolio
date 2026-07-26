@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaGithub } from "react-icons/fa";
 import { FaLink } from "react-icons/fa6";
-import { MdOutlineStorage } from "react-icons/md";
+import { DiDatabase } from "react-icons/di";
 
 const ProjectList = ({ projList, setVisibleCount, visibleCount, totalProject }) => {
     return (
@@ -26,7 +26,7 @@ const ProjectList = ({ projList, setVisibleCount, visibleCount, totalProject }) 
                                     {
                                         techItem.icon != null
                                             ? <i className={`${techItem.icon} pr-2 text-xs lg:text-sm`}></i>
-                                            : <MdOutlineStorage className=' pr-2 text-xs lg:text-sm'/>
+                                            : <DiDatabase className='mr-2 text-sm lg:text-base'/>
                                     }
                                     <p className='uppercase font-light text-xs lg:text-sm'>{techItem.techName}</p>
                                 </div>
