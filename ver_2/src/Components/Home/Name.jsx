@@ -17,8 +17,8 @@ const Name = ({mobileRect, desktopRect}) => {
                 loading='eager'
                 draggable='false'
             />
-            <p className='font-extrabold text-[69px] md:text-[150px] lg:text-[205px] msi:text-[230px] 2xl:text-[280px] z-2 leading-8 lg:leading-0 msi:leading-8 lg:tracking-[17px] msi:tracking-[25px] cursor-default'>GAURAV</p>
-            <p className='text-3xl md:text-[80px] lg:text-[70px] msi:text-[85px] 2xl:text-[100px] tracking-[13px] md:tracking-[17px] lg:tracking-[45px] msi:tracking-[50px] 2xl:tracking-[60px] pl-2 z-2 leading-14 md:leading-38 lg:leading-60 2xl:leading-75 cursor-default'>KUMAR DAS</p>
+            <p className='font-extrabold text-[69px] md:text-[150px] lg:text-[205px] msi:text-[230px] 2xl:text-[280px] z-2 leading-8 lg:leading-0 msi:leading-8 lg:tracking-[17px] msi:tracking-[25px] cursor-default select-none'>GAURAV</p>
+            <p className='text-3xl md:text-[80px] lg:text-[70px] msi:text-[85px] 2xl:text-[100px] tracking-[13px] md:tracking-[17px] lg:tracking-[45px] msi:tracking-[50px] 2xl:tracking-[60px] pl-2 z-2 leading-14 md:leading-38 lg:leading-60 2xl:leading-75 cursor-default select-none'>KUMAR DAS</p>
         </div>
     )
 }

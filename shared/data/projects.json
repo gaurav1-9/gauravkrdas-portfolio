@@ -12,6 +12,22 @@
         "hostLink": null
     },
     {
+        "name": "flipperrr",
+        "techStack": [
+            {
+                "icon": "devicon-react-original",
+                "techName": "React"
+            },
+            {
+                "icon": "devicon-tailwindcss-original",
+                "techName": "TailwindCSS"
+            }
+        ],
+        "desc": "A web-based memory card game where players flip cards to find matching pairs.",
+        "link": "https://github.com/gaurav1-9/flipperrr",
+        "hostLink": "https://flipperrr.vercel.app/"
+    },
+    {
         "name": "PanPal",
         "techStack": [
             {
@@ -29,22 +45,6 @@
         "desc": "A web application for creating, organizing, and managing a personalized collection of recipes.",
         "link": "https://github.com/gaurav1-9/panpal",
         "hostLink": "https://panpal.vercel.app/"
-    },
-    {
-        "name": "flipperrr",
-        "techStack": [
-            {
-                "icon": "devicon-react-original",
-                "techName": "React"
-            },
-            {
-                "icon": "devicon-tailwindcss-original",
-                "techName": "TailwindCSS"
-            }
-        ],
-        "desc": "A web-based memory card game where players flip cards to find matching pairs.",
-        "link": "https://github.com/gaurav1-9/flipperrr",
-        "hostLink": "https://flipperrr.vercel.app/"
     },
     {
         "name": "janim.ai",
