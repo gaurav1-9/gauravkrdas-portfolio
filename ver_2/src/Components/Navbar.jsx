@@ -6,18 +6,18 @@ const Navbar = ({ selectedTab, setSelectedTab, handleClick }) => {
         <nav className='flex justify-center items-center sticky top-0 z-100 bg-transparent'>
             <ul className='flex gap-8 lg:gap-12 mt-3 px-12 md:px-4 py-3 z-10 backdrop-blur-xl rounded-full'>
                 <li
-                    className={`text-lg lg:text-2xl ease-in duration-100 cursor-pointer ${selectedTab === 0 ? "text-crimsonCarrot font-semibold underline underline-offset-4" : "text-carbonBlack hover:scale-[1.03]"}`}
+                    className={`select-none text-lg lg:text-2xl ease-in duration-100 cursor-pointer ${selectedTab === 0 ? "text-crimsonCarrot font-semibold underline underline-offset-4" : "text-carbonBlack hover:scale-[1.03]"}`}
                     onClick={() => handleClick(0)}
                 >
                     home
                 </li>
                 <li
-                    className={`text-lg lg:text-2xl ease-in duration-100 cursor-pointer ${selectedTab === 1 ? "text-crimsonCarrot font-semibold underline underline-offset-4" : "text-carbonBlack hover:scale-[1.03]"}`}
+                    className={`select-none text-lg lg:text-2xl ease-in duration-100 cursor-pointer ${selectedTab === 1 ? "text-crimsonCarrot font-semibold underline underline-offset-4" : "text-carbonBlack hover:scale-[1.03]"}`}
                     onClick={() => handleClick(1)}>
                     projects
                 </li>
                 <li
-                    className={`text-lg lg:text-2xl ease-in duration-100 cursor-pointer ${selectedTab === 2 ? "text-crimsonCarrot font-semibold underline underline-offset-4" : "text-carbonBlack hover:scale-[1.03]"}`}
+                    className={`select-none text-lg lg:text-2xl ease-in duration-100 cursor-pointer ${selectedTab === 2 ? "text-crimsonCarrot font-semibold underline underline-offset-4" : "text-carbonBlack hover:scale-[1.03]"}`}
                     onClick={() => handleClick(2)}
                 >
                     about
