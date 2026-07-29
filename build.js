@@ -10,12 +10,19 @@ execSync("npm run build", { cwd: "ver_1", stdio: "inherit" });
 execSync("npm install", { cwd: "ver_2", stdio: "inherit" });
 execSync("npm run build", { cwd: "ver_2", stdio: "inherit" });
 
+// Build PageNotFOund
+execSync("npm install", { cwd: "v_page_not_found", stdio: "inherit" });
+execSync("npm run build", { cwd: "v_page_not_found", stdio: "inherit" });
+
 // Clean deploy folder
 fs.rmSync("deploy", { recursive: true, force: true });
 fs.mkdirSync("deploy");
 
 // Copy ver_2 to deploy root
 fs.cpSync("ver_2/dist", "deploy/ver_2", { recursive: true }); //if version 2 is completed, use "deploy"
+
+// Copy v_page_not_found to deploy root
+fs.cpSync("v_page_not_found/dist", "deploy/v_page_not_found", { recursive: true }); //if version 2 is completed, use "deploy"
 
 // Copy ver_1 to deploy/ver_1
 fs.cpSync("ver_1/dist", "deploy", { recursive: true }); //if version 2 is completed, use "deploy/ver_1"

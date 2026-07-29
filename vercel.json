@@ -2,12 +2,16 @@
   "outputDirectory": "deploy",
   "rewrites": [
     {
-      "source": "/ver_1/(.*)",
+      "source": "/ver_1",
       "destination": "/ver_1/index.html"
     },
     {
-      "source": "/(.*)",
+      "source": "/",
       "destination": "/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/v_page_not_found/index.html"
     }
   ]
 }
