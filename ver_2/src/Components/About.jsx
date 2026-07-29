@@ -6,12 +6,12 @@ import Right from './About/Right'
 
 const About = () => {
     return (
-        <div className='flex flex-col lg:flex-row pt-17 md:pt-30 lg:pt-10 xl:pt-5 msi:pt-15 px-5 lg:px-30 h-screen'>
-            <div className='flex flex-col md:flex-row lg:flex-col lg:justify-center lg:items-center'>
+        <div className='flex flex-col lg:flex-row pt-17 md:pt-30 lg:pt-10 msi:pt-15 px-5 lg:px-30 lg:h-screen w-full'>
+            <div className='flex flex-col md:flex-row lg:flex-col lg:justify-center lg:items-center lg:w-3/10 lg:-ml-5 2xl:-ml-15'>
                 <Image />
                 <Sign />
                 <div className="relative flex flex-col justify-center items-center md:-ml-3 lg:ml-0 2xl:pt-20">
-                    <p className='text-crimsonCarrot font-semibold text-2xl md:text-4xl lg:text-3xl msi:text-4xl py-2'>Gaurav Kumar Das</p>
+                    <p className='text-crimsonCarrot font-semibold text-2xl md:text-4xl lg:text-3xl msi:text-4xl py-2 lg:w-15/10 text-center'>Gaurav Kumar Das</p>
                     <p className='text-carbonBlack/60 font-semibold text-base md:text-xl lg:text-lg msi:text-xl leading-2'>gauravkrdas19@gmail.com</p>
                     <p className='text-carbonBlack font-semibold text-base md:text-xl lg:text-lg msi:text-xl pt-1 pb-3 xl:pb-2 msi:pb-3'>Guwahati, Assam</p>
                     <div className="flex justify-center">
