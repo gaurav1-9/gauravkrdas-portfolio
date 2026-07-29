@@ -17,7 +17,7 @@ const AboutText = () => {
     }
 
     return (
-        <div className='py-4 mt-1 text-lg msi:text-xl 2xl:text-2xl flex flex-col gap-5 lg:gap-3 msi:gap-5 text-carbonBlack'>
+        <div className='py-4 mt-1 lg:mt-0 lg:py-3 msi:mt-1 msi:py-4 text-lg msi:text-xl 2xl:text-2xl flex flex-col gap-5 lg:gap-3 msi:gap-5 text-carbonBlack'>
             <p>
                 Hey there! I'm <span className='font-semibold text-crimsonCarrot'>Gaurav Kumar Das</span>, a {calculateAge("2001-11-19")}-year-old passionate coder from Guwahati, Assam. With a strong background in full-stack web development, as well as experience in Android development, I love creating meaningful and interactive projects. I'm also experienced in building REST APIs and enjoy tackling challenging coding problems that push my skills further.
             </p>
