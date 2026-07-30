@@ -5,7 +5,13 @@ const App = () => {
   return (
     <div className='relative flex flex-col justify-start items-center h-screen overflow-hidden text-onyx pt-15 md:pt-50 lg:pt-5'>
       <p className='text-6xl md:text-8xl font-semibold absolute top-25 md:top-55 lg:top-15 tracking-[20px]'>404</p>
-      <img src={Gif404} className='mt-15 lg:mt-17 z-10' />
+      <img
+        src={Gif404}
+        draggable='false'
+        loading='eager'
+        fetchPriority='high'
+        className='mt-15 lg:mt-17 z-10'
+      />
 
       <p className='text-3xl md:text-5xl lg:text-4xl msi:text-5xl font-semibold pt-3'>Looks like you're lost</p>
       <p className='text-base md:text-3xl lg:text-xl msi:text-2xl font-light msi:py-2'>The page you are looking for is not available</p>
