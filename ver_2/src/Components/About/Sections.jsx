@@ -6,10 +6,10 @@ const Sections = ({ tabSection, setTabSection }) => {
             <div className="flex h-full w-3/10 absolute bg-tabbedOrange right-0 z-10" />
             <div className={`flex h-0.5 w-7/10 absolute bg-linear-to-r from-alabasterGrey via-carbonBlack/8 to-alabasterGrey z-30 
                 ${(tabSection === 0)
-                    ? 'bottom-26'
+                    ? 'bottom-25.5 lg:bottom-23 msi:bottom-26 2xl:bottom-40'
                     : (tabSection === 1)
                         ? 'hidden'
-                        : 'top-26'
+                        : 'top-25.5 lg:top-23 msi:top-26 2xl:top-40'
                 }`}
             />
             <div
@@ -49,7 +49,7 @@ const Sections = ({ tabSection, setTabSection }) => {
                     }
                          `}
             >
-                <p>skills</p>
+                <p>education</p>
             </div>
         </div>
     )
