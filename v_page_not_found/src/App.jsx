@@ -4,7 +4,7 @@ import Gif404 from './assets/404.gif'
 const App = () => {
   return (
     <div className='relative flex flex-col justify-start items-center h-screen overflow-hidden text-onyx pt-15 md:pt-50 lg:pt-5'>
-      <p className='text-xl md:text-3xl font-light absolute top-18 md:top-47 lg:top-7 msi:top-12 tracking-[20px]'>ERROR</p>
+      <p className='text-xl md:text-3xl font-light lg:font-extralight absolute top-18 md:top-47 lg:top-7 msi:top-12 tracking-[20px]'>ERROR</p>
       <p className='text-6xl md:text-8xl font-semibold absolute top-25 md:top-55 lg:top-15 msi:top-20 tracking-[20px]'>404</p>
       <img
         src={Gif404}
