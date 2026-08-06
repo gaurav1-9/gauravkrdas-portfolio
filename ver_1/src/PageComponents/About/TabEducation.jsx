@@ -1,5 +1,6 @@
 import React from 'react'
 import eduList from '../../../../shared/data/education.json'
+import dpsg from '../../../../shared/DPSG_logocolor.png'
 
 const TabEducation = () => {
   return (
@@ -8,7 +9,7 @@ const TabEducation = () => {
         eduList.map((item, index) => (
           <div key={index} className='flex mb-5 flex-col'>
             <div className='flex justify-start'>
-              <img src={item.imgSrc} alt={item.imgAlt} className={`w-17 md:w-20 lg:w-20 ${(item.imgAlt.startsWith('D')) ? 'h-19 md:h-22 lg:h-22' : 'h-17 md:h-20 lg:h-20'}`} draggable='false' />
+              <img src={(item.imgSrc.startsWith('D')) ? dpsg : item.imgSrc} alt={item.imgAlt} className={`w-17 md:w-20 lg:w-20 ${(item.imgAlt.startsWith('D')) ? 'h-19 md:h-22 lg:h-22' : 'h-17 md:h-20 lg:h-20'}`} draggable='false' />
               <div className='ml-6'>
                 <p className='text-primary font-semibold text-xl md:text-2xl lg:text-2xl leading-6'>{item.name}</p>
                 <p className='text-primary text-xs md:text-sm lg:text-md font-light'>{item.course}</p>
