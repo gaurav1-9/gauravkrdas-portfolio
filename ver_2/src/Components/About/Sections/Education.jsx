@@ -12,7 +12,7 @@ const Education = () => {
             key={index}
             className={`relative flex md:gap-6 select-none
                                 ${(index !== (EduList.length - 1))
-                ? 'md:pb-10'
+                ? 'md:pb-10 2xl:pb-15'
                 : 'md:pb-0'
               }
             `}
@@ -24,7 +24,7 @@ const Education = () => {
                   : item.imgSrc
               }
               alt={item.imgAlt}
-              className='md:size-20'
+              className={(item.imgSrc.startsWith('D')) ? 'h-23' : 'md:size-20'}
               draggable='false'
             />
             <div className="flex flex-col">
@@ -46,7 +46,7 @@ const Education = () => {
 
             {
               (index !== (EduList.length - 1))
-                ? <div className="absolute bottom-5 w-full h-0.5 bg-linear-to-r from-tabbedOrange via-carbonBlack/10 to-tabbedOrange" />
+                ? <div className="absolute md:bottom-5 2xl:bottom-7.5 w-full h-0.5 bg-linear-to-r from-tabbedOrange via-carbonBlack/10 to-tabbedOrange" />
                 : null
             }
 
