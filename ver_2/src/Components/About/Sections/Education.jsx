@@ -30,7 +30,7 @@ const Education = () => {
             <div className="flex flex-col">
               <p className='font-extrabold md:text-2xl md:leading-6 md:pb-2'>{item.name}</p>
 
-              <p className='flex justify-start items-center font-medium md:gap-2 md:leading-5'>{item.course}</p>
+              <p className='flex flex-wrap justify-start items-center font-medium md:gap-2 md:leading-5'>{item.course}</p>
 
               {
                 (item.grade)

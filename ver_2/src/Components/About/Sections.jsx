@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Sections = ({ tabSection, setTabSection }) => {
+const Sections = ({ tabSection, handleTab }) => {
     return (
         <div className='relative hidden md:flex justify-center md:justify-between items-center px-0 flex-col w-2/10 h-full'>
             <div className="flex h-full w-3/10 absolute bg-tabbedOrange right-0 z-10" />
@@ -13,7 +13,7 @@ const Sections = ({ tabSection, setTabSection }) => {
                 }`}
             />
             <div
-                onClick={() => setTabSection(0)}
+                onClick={() => handleTab(0)}
                 className={`relative z-20 msi:text-xl 2xl:text-2xl h-13 md:h-1/3 w-full flex justify-center items-center px-3 select-none cursor-pointer border-l-8 text-carbonBlack
                             ${(tabSection === 0)
                         ? 'font-semibold underline underline-offset-4 bg-tabbedOrange border-crimsonCarrot rounded-t-none'
@@ -26,7 +26,7 @@ const Sections = ({ tabSection, setTabSection }) => {
                 <p>experience</p>
             </div>
             <div
-                onClick={() => setTabSection(1)}
+                onClick={() => handleTab(1)}
                 className={`z-20 msi:text-xl 2xl:text-2xl h-13 md:h-1/3 w-full flex justify-center items-center px-3 select-none cursor-pointer border-l- text-carbonBlack
                             ${(tabSection === 0)
                         ? 'font-normal rounded-tr-3xl bg-alabasterGrey border-alabasterGrey hover:bg-tabbedOrangeAccent hover:border-tabbedOrangeAccent'
@@ -39,7 +39,7 @@ const Sections = ({ tabSection, setTabSection }) => {
                 <p>skills</p>
             </div>
             <div
-                onClick={() => setTabSection(2)}
+                onClick={() => handleTab(2)}
                 className={`z-20 msi:text-xl 2xl:text-2xl h-13 md:h-1/3 w-full flex justify-center items-center px-3 select-none cursor-pointer border-l-8 text-carbonBlack
                             ${(tabSection === 0)
                         ? 'font-normal bg-alabasterGrey border-alabasterGrey hover:bg-tabbedOrangeAccent hover:border-tabbedOrangeAccent'

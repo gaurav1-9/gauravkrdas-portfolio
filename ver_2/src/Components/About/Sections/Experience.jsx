@@ -11,7 +11,7 @@ const Experience = () => {
                         className={`relative flex md:gap-6 select-none
                                 ${
                                     (index!== (ExpList.length-1))
-                                    ? 'md:pb-15'
+                                    ? 'md:pb-15 lg:pb-8 msi:pb-15'
                                     : 'md:pb-0'
                                 }
                                 `}
@@ -25,7 +25,7 @@ const Experience = () => {
                         <div className="flex flex-col">
                             <p className='font-extrabold md:text-2xl'>{item.role}</p>
 
-                            <p className='flex justify-start items-center font-medium md:gap-2 md:leading-2 md:pb-5'>
+                            <p className='flex flex-wrap justify-start items-center font-medium md:gap-2 md:leading-2 md:pb-5'>
                                 <span>{item.comName}</span>
                                 <span className='w-1.5 h-1.5 bg-carbonBlack/80 rounded-full' />
                                 <span>{item.jobType}</span>
@@ -48,7 +48,7 @@ const Experience = () => {
 
                         {
                             (index !== (ExpList.length - 1))
-                                ? <div className="absolute bottom-7.5 w-full h-0.5 bg-linear-to-r from-tabbedOrange via-carbonBlack/10 to-tabbedOrange" />
+                                ? <div className="absolute md:bottom-7.5 lg:bottom-4 msi:bottom-7.5 w-full h-0.5 bg-linear-to-r from-tabbedOrange via-carbonBlack/10 to-tabbedOrange" />
                                 : null
                         }
 
