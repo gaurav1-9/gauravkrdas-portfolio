@@ -14,7 +14,7 @@ const Sections = ({ tabSection, setTabSection }) => {
             />
             <div
                 onClick={() => setTabSection(0)}
-                className={`relative z-20 msi:text-xl 2xl:text-2xl h-13 md:h-1/3 w-full flex justify-center items-center px-3 select-none cursor-pointer border-l-8
+                className={`relative z-20 msi:text-xl 2xl:text-2xl h-13 md:h-1/3 w-full flex justify-center items-center px-3 select-none cursor-pointer border-l-8 text-carbonBlack
                             ${(tabSection === 0)
                         ? 'font-semibold underline underline-offset-4 bg-tabbedOrange border-crimsonCarrot rounded-t-none'
                         : (tabSection === 1)
@@ -27,7 +27,7 @@ const Sections = ({ tabSection, setTabSection }) => {
             </div>
             <div
                 onClick={() => setTabSection(1)}
-                className={`z-20 msi:text-xl 2xl:text-2xl h-13 md:h-1/3 w-full flex justify-center items-center px-3 select-none cursor-pointer border-l-8
+                className={`z-20 msi:text-xl 2xl:text-2xl h-13 md:h-1/3 w-full flex justify-center items-center px-3 select-none cursor-pointer border-l- text-carbonBlack
                             ${(tabSection === 0)
                         ? 'font-normal rounded-tr-3xl bg-alabasterGrey border-alabasterGrey hover:bg-tabbedOrangeAccent hover:border-tabbedOrangeAccent'
                         : (tabSection === 1)
@@ -40,7 +40,7 @@ const Sections = ({ tabSection, setTabSection }) => {
             </div>
             <div
                 onClick={() => setTabSection(2)}
-                className={`z-20 msi:text-xl 2xl:text-2xl h-13 md:h-1/3 w-full flex justify-center items-center px-3 select-none cursor-pointer border-l-8
+                className={`z-20 msi:text-xl 2xl:text-2xl h-13 md:h-1/3 w-full flex justify-center items-center px-3 select-none cursor-pointer border-l-8 text-carbonBlack
                             ${(tabSection === 0)
                         ? 'font-normal bg-alabasterGrey border-alabasterGrey hover:bg-tabbedOrangeAccent hover:border-tabbedOrangeAccent'
                         : (tabSection === 1)

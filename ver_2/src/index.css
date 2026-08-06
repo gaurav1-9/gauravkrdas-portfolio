@@ -23,6 +23,11 @@
   background: #c7c7c7;
 }
 
+.scroll-color::-webkit-scrollbar{
+  background-color: var(--color-tabbedOrange);
+  overscroll-behavior-y: contain;
+}
+
 ::-webkit-scrollbar{
   background-color: var(--color-alabasterGrey);
   width: 12px;
